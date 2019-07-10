@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Elements of the game Caylus Magna Carta. -->
+<game_elements>
+  <!--Name of the game.-->
+  <game_name>Caylus Magna Carta</game_name>
+  <!--All 2 versions of the game.-->
+  <versions>
+    <version>
+      <name>Beginner</name>
+    </version>
+    <version>
+      <name>Standard</name>
+    </version>
+  </versions>
+  <!-- Minimal number of players. -->
+  <n_min_players>2</n_min_players>
+  <!-- Maximal number of players. -->
+  <n_max_players>4</n_max_players>
+  <!--Money (coins). -->
+  <money>
+    <name>denier</name>
+    <number>56</number>
+  </money>
+  <!--All 4 types of resources (cubes).
+Gold is a wild resource: a cube of gold equals a cube of any type.-->
+  <resources>
+    <resource>
+      <name>food</name>
+      <number>25</number>
+    </resource>
+    <resource>
+      <name>wood</name>
+      <number>25</number>
+    </resource>
+    <resource>
+      <name>stone</name>
+      <number>25</number>
+    </resource>
+    <resource>
+      <name>gold</name>
+      <number>25</number>
+    </resource>
+  </resources>
+  <!--Colors of the players.-->
+  <color_players>
+    <color_player>red</color_player>
+    <color_player>green</color_player>
+    <color_player>orange</color_player>
+    <color_player>blue</color_player>
+  </color_players>
+  <!--Buildings (cards).-->
+  <buildings>
+    <!--Background of all the player buildings (green cards).-->
+    <background_player_building>
+      <belongs_to_beginner_version>False</belongs_to_beginner_version>
+      <can_be_a_prestige_building>True</can_be_a_prestige_building>
+      <allows_to_place_a_worker>False</allows_to_place_a_worker>
+      <front_color>greenyellow</front_color>
+      <name>Résidence</name>
+      <cost>
+        <n_food_cubes>-1</n_food_cubes>
+      </cost>
+      <n_prestige_pts>+1</n_prestige_pts>
+      <effect>
+        <text>Get a bonus income of 1 denier during the income phase.</text>
+        <phase_numero>1</phase_numero>
+        <gain>
+          <n_deniers>+1</n_deniers>
+        </gain>
+      </effect>
+    </background_player_building>
+    <!--A set per player of all 12 player buildings (cards of the color of the player).
+Each player building is described by its front color, name, cost (number of food, wood, stone or of any type), number of prestige points, [optionally] construction (actions phase), primary and secondary effect (effect phase).-->
+    <player_buildings>
+      <can_be_a_prestige_building>False</can_be_a_prestige_building>
+      <allows_to_place_a_worker>True</allows_to_place_a_worker>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>yellow</front_color>
+        <name>Small Farm</name>
+        <cost>
+          <n_food_cubes>-1</n_food_cubes>
+          <n_wood_cubes>-1</n_wood_cubes>
+        </cost>
+        <n_prestige_pts>+1</n_prestige_pts>
+        <construction>
+          <text>When these card is placed on the road, put 2/4/4 (for 2/3/4 players) food cubes in the secondary effect area.</text>
+          <where>secondary effect area</where>
+          <n_food_cubes_into_area>
+            <n_food_cubes_into_area_for_2_players>2</n_food_cubes_into_area_for_2_players>
+            <n_food_cubes_into_area_for_3_players>4</n_food_cubes_into_area_for_3_players>
+            <n_food_cubes_into_area_for_4_players>4</n_food_cubes_into_area_for_4_players>
+          </n_food_cubes_into_area>
+        </construction>
+        <primary_effect>
+          <text>The worker's owner takes 1 food cube from the stock.</text>
+          <gain>
+            <n_food_cubes>+1</n_food_cubes>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>The card's owner takes 1 food cube from the secondary effect area (if there is no cube left, the owner gets nothing).</text>
+          <gain>
+            <where>secondary effect area</where>
+            <n_food_cubes>+1</n_food_cubes>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>yellow</front_color>
+        <name>Small Sawmill</name>
+        <cost>
+          <n_food_cubes>-1</n_food_cubes>
+          <n_wood_cubes>-1</n_wood_cubes>
+        </cost>
+        <n_prestige_pts>+1</n_prestige_pts>
+        <construction>
+          <text>When these card is placed on the road, put 2/4/4 (for 2/3/4 players) wood cubes in the secondary effect area.</text>
+          <where>secondary effect area</where>
+          <n_wood_cubes_into_area>
+            <n_wood_cubes_into_area_for_2_players>2</n_wood_cubes_into_area_for_2_players>
+            <n_wood_cubes_into_area_for_3_players>4</n_wood_cubes_into_area_for_3_players>
+            <n_wood_cubes_into_area_for_4_players>4</n_wood_cubes_into_area_for_4_players>
+          </n_wood_cubes_into_area>
+        </construction>
+        <primary_effect>
+          <text>The worker's owner takes 1 wood cube from the stock.</text>
+          <gain>
+            <n_wood_cubes>+1</n_wood_cubes>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>The card's owner takes 1 wood cube from the secondary effect area (if there is no cube left, the owner gets nothing).</text>
+          <gain>
+            <where>secondary effect area</where>
+            <n_wood_cubes>+1</n_wood_cubes>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>yellow</front_color>
+        <name>Small Quarry</name>
+        <cost>
+          <n_food_cubes>-1</n_food_cubes>
+          <n_wood_cubes>-1</n_wood_cubes>
+        </cost>
+        <n_prestige_pts>+1</n_prestige_pts>
+        <construction>
+          <text>When these card is placed on the road, put 2/4/4 (for 2/3/4 players) stone cubes in the secondary effect area.</text>
+          <where>secondary effect area</where>
+          <n_stone_cubes_into_area>
+            <n_stone_cubes_into_area_for_2_players>2</n_stone_cubes_into_area_for_2_players>
+            <n_stone_cubes_into_area_for_3_players>4</n_stone_cubes_into_area_for_3_players>
+            <n_stone_cubes_into_area_for_4_players>4</n_stone_cubes_into_area_for_4_players>
+          </n_stone_cubes_into_area>
+        </construction>
+        <primary_effect>
+          <text>The worker's owner takes 1 stone cube from the stock.</text>
+          <gain>
+            <n_stone_cubes>+1</n_stone_cubes>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>The card's owner takes 1 stone cube from the secondary effect area (if there is no cube left, the owner gets nothing).</text>
+          <gain>
+            <where>secondary effect area</where>
+            <n_stone_cubes>+1</n_stone_cubes>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>yellow</front_color>
+        <name>Peddler</name>
+        <cost>
+          <n_wood_cubes>-1</n_wood_cubes>
+          <CHOICES>
+            <CHOICE>
+              <n_food_cubes>-1</n_food_cubes>
+            </CHOICE>
+            <CHOICE>
+              <n_wood_cubes>-1</n_wood_cubes>
+            </CHOICE>
+            <CHOICE>
+              <n_stone_cubes>-1</n_stone_cubes>
+            </CHOICE>
+            <CHOICE>
+              <n_gold_cubes>-1</n_gold_cubes>
+            </CHOICE>
+          </CHOICES>
+        </cost>
+        <n_prestige_pts>+2</n_prestige_pts>
+        <primary_effect>
+          <text>Buy 1 or 2 cubes (any ressource but gold) from the stock with 1 or 2 deniers.</text>
+          <CHOICES>
+            <CHOICE>
+              <cost>
+                <n_deniers>-1</n_deniers>
+              </cost>
+              <gain>
+                <CHOICES>
+                  <CHOICE>
+                    <n_food_cubes>+1</n_food_cubes>
+                  </CHOICE>
+                  <CHOICE>
+                    <n_wood_cubes>+1</n_wood_cubes>
+                  </CHOICE>
+                  <CHOICE>
+                    <n_stone_cubes>+1</n_stone_cubes>
+                  </CHOICE>
+                </CHOICES>
+              </gain>
+            </CHOICE>
+            <CHOICE>
+              <cost>
+                <n_deniers>-2</n_deniers>
+              </cost>
+              <gain>
+                <CHOICES>
+                  <CHOICE>
+                    <n_food_cubes>+2</n_food_cubes>
+                  </CHOICE>
+                  <CHOICE>
+                    <n_wood_cubes>+2</n_wood_cubes>
+                  </CHOICE>
+                  <CHOICE>
+                    <n_stone_cubes>+2</n_stone_cubes>
+                  </CHOICE>
+                  <CHOICE>
+                    <n_food_cubes>+1</n_food_cubes>
+                    <n_wood_cubes>+1</n_wood_cubes>
+                  </CHOICE>
+                  <CHOICE>
+                    <n_food_cubes>+1</n_food_cubes>
+                    <n_stone_cubes>+1</n_stone_cubes>
+                  </CHOICE>
+                  <CHOICE>
+                    <n_wood_cubes>+1</n_wood_cubes>
+                    <n_stone_cubes>+1</n_stone_cubes>
+                  </CHOICE>
+                </CHOICES>
+              </gain>
+            </CHOICE>
+          </CHOICES>
+        </primary_effect>
+        <secondary_effect>
+          <text>Buy 1 cube (any ressource but gold) from the stock with 1 denier.</text>
+          <cost>
+            <n_deniers>-1</n_deniers>
+          </cost>
+          <gain>
+            <CHOICES>
+              <CHOICE>
+                <n_food_cubes>+1</n_food_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_wood_cubes>+1</n_wood_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_stone_cubes>+1</n_stone_cubes>
+              </CHOICE>
+            </CHOICES>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>yellow</front_color>
+        <name>Market</name>
+        <cost>
+          <n_wood_cubes>-1</n_wood_cubes>
+          <CHOICES>
+            <CHOICE>
+              <n_food_cubes>-1</n_food_cubes>
+            </CHOICE>
+            <CHOICE>
+              <n_wood_cubes>-1</n_wood_cubes>
+            </CHOICE>
+            <CHOICE>
+              <n_stone_cubes>-1</n_stone_cubes>
+            </CHOICE>
+            <CHOICE>
+              <n_gold_cubes>-1</n_gold_cubes>
+            </CHOICE>
+          </CHOICES>
+        </cost>
+        <n_prestige_pts>+2</n_prestige_pts>
+        <primary_effect>
+          <text>Exchange 1 cube from your personal stock with 4 deniers.</text>
+          <cost>
+            <CHOICES>
+              <CHOICE>
+                <n_food_cubes>-1</n_food_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_wood_cubes>-1</n_wood_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_stone_cubes>-1</n_stone_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_gold_cubes>-1</n_gold_cubes>
+              </CHOICE>
+            </CHOICES>
+          </cost>
+          <gain>
+            <n_deniers>+4</n_deniers>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>Get 1 denier from the stock.</text>
+          <gain>
+            <n_deniers>+1</n_deniers>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>False</belongs_to_beginner_version>
+        <can_be_a_residential_building>False</can_be_a_residential_building>
+        <front_color>yellow</front_color>
+        <name>Lawyer</name>
+        <cost>
+          <n_food_cubes>-1</n_food_cubes>
+          <n_wood_cubes>-1</n_wood_cubes>
+        </cost>
+        <n_prestige_pts>+2</n_prestige_pts>
+        <primary_effect>
+          <text>Construct a residential building by paying 1 food cube and turning over one of your cards along the road (except a Lawyer).</text>
+          <cost>
+            <n_food_cubes>-1</n_food_cubes>
+          </cost>
+          <gain>
+            <n_residence_to_construct>1</n_residence_to_construct>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>Get 2 deniers from the stock.</text>
+          <gain>
+            <n_deniers>+2</n_deniers>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>grey</front_color>
+        <name>Large Farm</name>
+        <cost>
+          <n_food_cubes>-1</n_food_cubes>
+          <n_stone_cubes>-2</n_stone_cubes>
+        </cost>
+        <n_prestige_pts>+2</n_prestige_pts>
+        <primary_effect>
+          <text>Take 2 food cubes from the stock.</text>
+          <gain>
+            <n_food_cubes>+2</n_food_cubes>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>Take 1 food cube from the stock.</text>
+          <gain>
+            <n_food_cubes>+1</n_food_cubes>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>grey</front_color>
+        <name>Large Sawmill</name>
+        <cost>
+          <n_food_cubes>-1</n_food_cubes>
+          <n_stone_cubes>-2</n_stone_cubes>
+        </cost>
+        <n_prestige_pts>+2</n_prestige_pts>
+        <primary_effect>
+          <text>Take 2 wood cubes from the stock.</text>
+          <gain>
+            <n_wood_cubes>+2</n_wood_cubes>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>Take 1 wood cube from the stock.</text>
+          <gain>
+            <n_wood_cubes>+1</n_wood_cubes>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>grey</front_color>
+        <name>Large Quarry</name>
+        <cost>
+          <n_food_cubes>-1</n_food_cubes>
+          <n_stone_cubes>-2</n_stone_cubes>
+        </cost>
+        <n_prestige_pts>+2</n_prestige_pts>
+        <primary_effect>
+          <text>Take 2 stone cubes from the stock.</text>
+          <gain>
+            <n_stone_cubes>+2</n_stone_cubes>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>Take 1 stone cube from the stock.</text>
+          <gain>
+            <n_stone_cubes>+1</n_stone_cubes>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>grey</front_color>
+        <name>Gold Mine</name>
+        <cost>
+          <n_food_cubes>-1</n_food_cubes>
+          <n_stone_cubes>-2</n_stone_cubes>
+        </cost>
+        <n_prestige_pts>+2</n_prestige_pts>
+        <primary_effect>
+          <text>Get 1 gold cube from the stock.</text>
+          <gain>
+            <n_gold_cubes>+1</n_gold_cubes>
+          </gain>
+        </primary_effect>
+        <secondary_effect>
+          <text>Exchange 1 cube from your personal stock with 1 gold cube from the stock.</text>
+          <cost>
+            <CHOICES>
+              <CHOICE>
+                <n_food_cubes>-1</n_food_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_wood_cubes>-1</n_wood_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_stone_cubes>-1</n_stone_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_gold_cubes>-1</n_gold_cubes>
+              </CHOICE>
+            </CHOICES>
+          </cost>
+          <gain>
+            <n_gold_cubes>+1</n_gold_cubes>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>grey</front_color>
+        <name>Bank</name>
+        <cost>
+          <n_wood_cubes>-1</n_wood_cubes>
+          <n_stone_cubes>-2</n_stone_cubes>
+        </cost>
+        <n_prestige_pts>+3</n_prestige_pts>
+        <primary_effect>
+          <text>Buy 1 gold from the stock with 1 denier or buy 2 gold from the stock with 3 deniers.</text>
+          <CHOICES>
+            <CHOICE>
+              <cost>
+                <n_deniers>-1</n_deniers>
+              </cost>
+              <gain>
+                <n_gold_cubes>+1</n_gold_cubes>
+              </gain>
+            </CHOICE>
+            <CHOICE>
+              <cost>
+                <n_deniers>-3</n_deniers>
+              </cost>
+              <gain>
+                <n_gold_cubes>+2</n_gold_cubes>
+              </gain>
+            </CHOICE>
+          </CHOICES>
+        </primary_effect>
+        <secondary_effect>
+          <text>Buy 1 gold from the stock with 2 deniers.</text>
+          <cost>
+            <n_deniers>-2</n_deniers>
+          </cost>
+          <gain>
+            <n_gold_cubes>+1</n_gold_cubes>
+          </gain>
+        </secondary_effect>
+      </player_building>
+      <player_building>
+        <belongs_to_beginner_version>False</belongs_to_beginner_version>
+        <can_be_a_residential_building>True</can_be_a_residential_building>
+        <front_color>grey</front_color>
+        <name>Church</name>
+        <cost>
+          <n_wood_cubes>-1</n_wood_cubes>
+          <n_stone_cubes>-2</n_stone_cubes>
+        </cost>
+        <n_prestige_pts>+3</n_prestige_pts>
+        <primary_effect>
+          <text>Buy 1 Castle token with 2 deniers, or buy 2 Castle tokens with 5 deniers.</text>
+          <CHOICES>
+            <CHOICE>
+              <cost>
+                <n_deniers>-2</n_deniers>
+              </cost>
+              <gain>
+                <n_castle_tokens>+1</n_castle_tokens>
+              </gain>
+            </CHOICE>
+            <CHOICE>
+              <cost>
+                <n_deniers>-5</n_deniers>
+              </cost>
+              <gain>
+                <n_castle_tokens>+2</n_castle_tokens>
+              </gain>
+            </CHOICE>
+          </CHOICES>
+        </primary_effect>
+        <secondary_effect>
+          <text>Buy 1 Castle token with 3 deniers.</text>
+          <cost>
+            <n_deniers>-3</n_deniers>
+          </cost>
+          <gain>
+            <n_castle_tokens>+1</n_castle_tokens>
+          </gain>
+        </secondary_effect>
+      </player_building>
+    </player_buildings>
+    <!--All 5 neutral buildings (pink cards).
+Each neutral building is described by its name and effect (effect phase).-->
+    <neutral_buildings>
+      <belongs_to_beginner_version>True</belongs_to_beginner_version>
+      <can_be_a_prestige_building>False</can_be_a_prestige_building>
+      <allows_to_place_a_worker>True</allows_to_place_a_worker>
+      <front_color>pink</front_color>
+      <neutral_building>
+        <name>Park</name>
+        <effect>
+          <text>Get 1 cube of food from the stock.</text>
+          <phase_numero>4</phase_numero>
+          <gain>
+            <n_food_cubes>+1</n_food_cubes>
+          </gain>
+        </effect>
+      </neutral_building>
+      <neutral_building>
+        <name>Forest</name>
+        <effect>
+          <text>Get 1 cube of wood from the stock.</text>
+          <phase_numero>4</phase_numero>
+          <gain>
+            <n_wood_cubes>+1</n_wood_cubes>
+          </gain>
+        </effect>
+      </neutral_building>
+      <neutral_building>
+        <name>Quarry</name>
+        <effect>
+          <text>Get 1 cube of stone from the stock.</text>
+          <phase_numero>4</phase_numero>
+          <gain>
+            <n_stone_cubes>+1</n_stone_cubes>
+          </gain>
+        </effect>
+      </neutral_building>
+      <neutral_building>
+        <name>Peddler</name>
+        <effect>
+          <text>Buy 1 cube (any ressource but gold) from the stock with 1 denier.</text>
+          <phase_numero>4</phase_numero>
+          <cost>
+            <n_deniers>-1</n_deniers>
+          </cost>
+          <gain>
+            <CHOICES>
+              <CHOICE>
+                <n_food_cubes>+1</n_food_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_wood_cubes>+1</n_wood_cubes>
+              </CHOICE>
+              <CHOICE>
+                <n_stone_cubes>+1</n_stone_cubes>
+              </CHOICE>
+            </CHOICES>
+          </gain>
+        </effect>
+      </neutral_building>
+      <neutral_building>
+        <name>Trading Post</name>
+        <effect>
+          <text>Get 2 deniers from the stock.</text>
+          <phase_numero>4</phase_numero>
+          <gain>
+            <n_deniers>+2</n_deniers>
+          </gain>
+        </effect>
+      </neutral_building>
+    </neutral_buildings>
+    <!--All 7 prestige buildings (blue cards).
+Each prestige building is described by its name, cost (number of food, wood, stone or gold), number of prestige points and [optionally] effect (income phase).-->
+    <prestige_buildings>
+      <can_be_a_prestige_building>False</can_be_a_prestige_building>
+      <allows_to_place_a_worker>False</allows_to_place_a_worker>
+      <front_color>cyan</front_color>
+      <prestige_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <name>Theatre</name>
+        <cost>
+          <n_wood_cubes>-2</n_wood_cubes>
+          <n_gold_cubes>-1</n_gold_cubes>
+        </cost>
+        <n_prestige_pts>+6</n_prestige_pts>
+      </prestige_building>
+      <prestige_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <name>Statue</name>
+        <cost>
+          <n_stone_cubes>-2</n_stone_cubes>
+          <n_gold_cubes>-1</n_gold_cubes>
+        </cost>
+        <n_prestige_pts>+6</n_prestige_pts>
+      </prestige_building>
+      <prestige_building>
+        <belongs_to_beginner_version>False</belongs_to_beginner_version>
+        <name>Hotel</name>
+        <cost>
+          <n_stone_cubes>-3</n_stone_cubes>
+          <n_gold_cubes>-1</n_gold_cubes>
+        </cost>
+        <n_prestige_pts>+6</n_prestige_pts>
+        <effect>
+          <text>Get a bonus income of 1 denier during the income phase.</text>
+          <phase_numero>1</phase_numero>
+          <gain>
+            <n_deniers>+1</n_deniers>
+          </gain>
+        </effect>
+      </prestige_building>
+      <prestige_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <name>Stables</name>
+        <cost>
+          <n_food_cubes>-3</n_food_cubes>
+          <n_gold_cubes>-2</n_gold_cubes>
+        </cost>
+        <n_prestige_pts>+10</n_prestige_pts>
+      </prestige_building>
+      <prestige_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <name>Town Hall</name>
+        <cost>
+          <n_wood_cubes>-3</n_wood_cubes>
+          <n_gold_cubes>-2</n_gold_cubes>
+        </cost>
+        <n_prestige_pts>+10</n_prestige_pts>
+      </prestige_building>
+      <prestige_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <name>Monument</name>
+        <cost>
+          <n_stone_cubes>-3</n_stone_cubes>
+          <n_gold_cubes>-2</n_gold_cubes>
+        </cost>
+        <n_prestige_pts>+10</n_prestige_pts>
+      </prestige_building>
+      <prestige_building>
+        <belongs_to_beginner_version>True</belongs_to_beginner_version>
+        <name>Cathedral</name>
+        <cost>
+          <n_stone_cubes>-5</n_stone_cubes>
+          <n_gold_cubes>-3</n_gold_cubes>
+        </cost>
+        <n_prestige_pts>+14</n_prestige_pts>
+      </prestige_building>
+    </prestige_buildings>
+  </buildings>
+  <!--Setup.-->
+  <setup>
+    <!--Prestige point tokens (of the the 3 parts of the Castle) are sorted out according to their value and placed next to the Castle. 
+In three player games, 1 token of each value is removed; in two player games, 2 tokens of each value are removed.-->
+    <setup_castle>
+      <dungeon>
+        <front_color>darkred</front_color>
+        <name>Dungeon</name>
+        <n_castle_tokens>
+          <n_castle_tokens_for_2_players>5</n_castle_tokens_for_2_players>
+          <n_castle_tokens_for_3_players>6</n_castle_tokens_for_3_players>
+          <n_castle_tokens_for_4_players>7</n_castle_tokens_for_4_players>
+        </n_castle_tokens>
+        <n_prestige_pts>+4</n_prestige_pts>
+      </dungeon>
+      <walls>
+        <name>Walls</name>
+        <front_color>orangered</front_color>
+        <n_castle_tokens>
+          <n_castle_tokens_for_2_players>6</n_castle_tokens_for_2_players>
+          <n_castle_tokens_for_3_players>7</n_castle_tokens_for_3_players>
+          <n_castle_tokens_for_4_players>8</n_castle_tokens_for_4_players>
+        </n_castle_tokens>
+        <n_prestige_pts>+3</n_prestige_pts>
+      </walls>
+      <towers>
+        <front_color>gold</front_color>
+        <name>Towers</name>
+        <n_castle_tokens>
+          <n_castle_tokens_for_2_players>7</n_castle_tokens_for_2_players>
+          <n_castle_tokens_for_3_players>8</n_castle_tokens_for_3_players>
+          <n_castle_tokens_for_4_players>9</n_castle_tokens_for_4_players>
+        </n_castle_tokens>
+        <n_prestige_pts>+2</n_prestige_pts>
+      </towers>
+    </setup_castle>
+    <!--A player takes the neutral cards and places the Peddler card on the table. 
+Then, the player shuffles the remaining pink cards and places 1 card (2 player games), 2 cards (3 player games) or 3 cards (4 player games) to the left of the Peddler. Thus, the player has just started building the beginning of the road. The remaining pink cards are set aside; they will not be used in the game. 
+The Provost pawn is placed on the peddler card.-->
+    <setup_road>
+      <n_all_except_last_neutral_buildings>
+        <n_all_except_last_neutral_buildings_for_2_players>1</n_all_except_last_neutral_buildings_for_2_players>
+        <n_all_except_last_neutral_buildings_for_3_players>2</n_all_except_last_neutral_buildings_for_3_players>
+        <n_all_except_last_neutral_buildings_for_4_players>3</n_all_except_last_neutral_buildings_for_4_players>
+      </n_all_except_last_neutral_buildings>
+      <last_neutral_building>Peddler</last_neutral_building>
+      <place_provost>Peddler</place_provost>
+    </setup_road>
+    <!--Each player chooses a color and takes the corresponding cards and pawns.
+Players then shuffle their cards. Each player piles them up face down (that is, with the green side showing), and takes 3 cards from their own pile. 
+Now, each player may discard all the cards in their hand and take 3 new cards. This may only be done once.
+Discarded cards are placed face up in a discard pile. Each player has their own
+discard pile.-->
+    <setup_player>
+      <n_cards_in_hand>3</n_cards_in_hand>
+      <n_possibilities_to_discard_cards>1</n_possibilities_to_discard_cards>
+      <n_workers>4</n_workers>
+      <n_deniers>4</n_deniers>
+      <n_food_cubes>2</n_food_cubes>
+      <n_wood_cubes>2</n_wood_cubes>
+      <n_stone_cubes>0</n_stone_cubes>
+      <n_gold_cubes>0</n_gold_cubes>
+      <n_prestige_pts>0</n_prestige_pts>
+    </setup_player>
+  </setup>
+  <!--All 6 phases of a turn.-->
+  <phases>
+    <phase>
+      <belongs_to_beginner_version>True</belongs_to_beginner_version>
+      <numero>1</numero>
+      <name>Collecting income</name>
+    </phase>
+    <phase>
+      <belongs_to_beginner_version>True</belongs_to_beginner_version>
+      <numero>2</numero>
+      <name>Actions</name>
+    </phase>
+    <phase>
+      <belongs_to_beginner_version>False</belongs_to_beginner_version>
+      <numero>3</numero>
+      <name>The Provost's move</name>
+    </phase>
+    <phase>
+      <belongs_to_beginner_version>True</belongs_to_beginner_version>
+      <numero>4</numero>
+      <name>Effects of the buildings</name>
+    </phase>
+    <phase>
+      <belongs_to_beginner_version>True</belongs_to_beginner_version>
+      <numero>5</numero>
+      <name>The Castle</name>
+    </phase>
+    <phase>
+      <belongs_to_beginner_version>True</belongs_to_beginner_version>
+      <numero>6</numero>
+      <name>End of the turn</name>
+    </phase>
+  </phases>
+  <!--Each player gets 2 deniers from the stock.
+Furthermore, each player also gets 1 denier per residential building they own along the road.
+Finally, if a player has built the Hotel, they get 1
+more denier from the stock.-->
+  <phase_income>
+    <gain>
+      <n_deniers>+2</n_deniers>
+      <n_deniers_per_residence>+1</n_deniers_per_residence>
+      <n_deniers_if_hotel>+1</n_deniers_if_hotel>
+    </gain>
+  </phase_income>
+  <!--Starting with the first player and then following in clockwise order, the players must pick one of the following actions: pick a card, replace all the cards in your hand, place a worker on a building, construct a building from your hand, construct a prestige building, passing.-->
+  <phase_actions>
+    <!--The player pays 1 denier to the stock to take the first card on their pile and add it to their hand.-->
+    <cost>
+      <n_deniers_to_take_a_card>-1</n_deniers_to_take_a_card>
+    </cost>
+    <!--The player pays 1 denier to the stock to discard all the cards in their hand.-->
+    <cost>
+      <n_deniers_to_discard_all_cards>-1</n_deniers_to_discard_all_cards>
+    </cost>
+    <!--The player pays 1 denier to the stock and places 1 worker on a card along the road. There can be only 1 worker per card. A player may place a
+worker on a neutral building, on one of their own buildings, or on a building belonging to someone else. Placing a worker on a residential building or a prestige building is forbidden.-->
+    <cost>
+      <n_deniers_to_place_a_worker>-1</n_deniers_to_place_a_worker>
+      <n_workers>-1</n_workers>
+    </cost>
+    <!--The player puts their passing marker on the space of the bridge with the lowest number. The first player who passes gets 1 denier from the stock.
+Once a player has passed, they cannot take any actions for the remainder of the phase.-->
+    <gain>
+      <n_deniers_for_first_player_passing>+1</n_deniers_for_first_player_passing>
+    </gain>
+  </phase_actions>
+  <!--Following the passing order of phase Actions, the players now have the opportunity to move the Provost along the road by paying deniers. The
+price is 1 denier per card; each player may pay up to 3 deniers.
+NB: The Provost may not move beyond the limits of the road.
+There is only one turn to move the Provost. Once everyone has had an opportunity to move him, the phase is over.-->
+  <phase_provost_movements>
+    <n_turns_to_move_provost>1</n_turns_to_move_provost>
+    <n_deniers_per_a_provost_movement>-1</n_deniers_per_a_provost_movement>
+    <n_max_provost_movements_per_player>3</n_max_provost_movements_per_player>
+  </phase_provost_movements>
+  <!--In order to build the parts of the Castle, the players must spend batches of resources. A batch is composed of 3 resources: 1 food, 1 wood and 1 stone.-->
+  <phase_castle>
+    <!--Cost of one batch.-->
+    <cost>
+      <n_food_cubes>-1</n_food_cubes>
+      <n_wood_cubes>-1</n_wood_cubes>
+      <n_stone_cubes>-1</n_stone_cubes>
+    </cost>
+    <!--The player who has offered the most batches during this phase takes 1 gold cube from the stock. In case of a draw, the player who offered that number of batches first wins the cube.-->
+    <gain>
+      <n_gold_cubes_for_player_offered_most_batches>+1</n_gold_cubes_for_player_offered_most_batches>
+    </gain>
+    <!--If no-one has offered any batch during this phase, 2 tokens are removed from the stock of victory points - these tokens are removed from the game.-->
+    <no_gain>
+      <n_prestige_pt_tokens_to_remove>2</n_prestige_pt_tokens_to_remove>
+    </no_gain>
+  </phase_castle>
+  <!--The Provost advances by 2 cards toward the end of the road. If there is only 1 card before the end of the road, he only advances by 1 card. If he is already at the end of the road, he does not move.-->
+  <phase_end_turn>
+    <n_provost_advances>2</n_provost_advances>
+  </phase_end_turn>
+</game_elements>
