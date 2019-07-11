@@ -1,13 +1,12 @@
 import abc
 import collections
 import itertools
-import random
 import sys
-import xml.etree.ElementTree as ET
 from enum import Enum, unique
 from os import path
 
-import game
+from game_mod import *
+
 
 
 
