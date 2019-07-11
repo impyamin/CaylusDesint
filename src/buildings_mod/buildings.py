@@ -1,5 +1,6 @@
 #!/usr/bin/python
 from enum import Enum, unique
+import collections
 
 
 from phases_mod import *
