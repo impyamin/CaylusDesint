@@ -149,8 +149,16 @@ class Game:
             self.play_phase_building_effects()
             self.play_phase_castle()
             self.play_phase_end_turn()
-        print('The game ends.')
         self.winners()
+        self.ask_for_replay()
+    
+    def ask_for_replay(self):
+        response = input("Game has ended, wanna play again ? [Y/N]")
+        if response == 'Y':
+            self.setup()
+            self.play()
+
+
 
     def play_phase_income(self) -> None:
         """
