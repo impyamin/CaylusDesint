@@ -155,6 +155,14 @@ class Game:
     def ask_for_replay(self):
         response = input("Game has ended, wanna play again ? [Y/N]")
         if response == 'Y':
+            response = input("Please select difficulty : begginer / standard")
+            self.version = response
+            response = input("Select players order")
+            p_list = []
+            for p in response.split(' ') : 
+                p_list.append(p)
+            print(p_list)
+            self.game_element.check_player_list(p_list)
             self.setup()
             self.play()
 
@@ -767,31 +775,9 @@ class GameElement:
         for color_player_name_tag in xml_tree_root.findall('color_players/color_player'):
             self.color_players.append(ColorPlayer(color_player_name_tag.text))
         # Check the players (colors and ai names, 1! human).
-        n_humans = 0  # type: int
-        color_player_names = [color_player.name for color_player in self.color_players]  # type: List[str]
-        for arg in [sys.argv[i_arg] for i_arg in range(3, n_args)]:
-            list_arg = arg.split('=')  # type: List[str]
-            if len(list_arg) == 1:  # human: <color>
-                if list_arg[0] not in color_player_names:
-                    self.usage('The color ' + list_arg[0] + ' for the human of the argument ' + arg + ' ' +
-                               GameElement.TXT_IS_NOT_CORRECT + '.', txt_n_min_max_players)
-                else:
-                    n_humans += 1
-                    color_player_names.remove(list_arg[0])
-            elif len(list_arg) == 2:  # ai: <color=ai_name>
-                if list_arg[0] not in color_player_names:
-                    self.usage('The color ' + list_arg[0] + ' for an AI of the argument ' + arg + ' ' +
-                               GameElement.TXT_IS_NOT_CORRECT + '.', txt_n_min_max_players)
-                elif list_arg[1] not in AIPlayer.ai_names():
-                    self.usage('The name ' + list_arg[1] + ' of an AI of the argument ' + arg + ' ' +
-                               GameElement.TXT_IS_NOT_CORRECT + '.', txt_n_min_max_players)
-                else:
-                    color_player_names.remove(list_arg[0])
-            else:
-                self.usage('The argument ' + arg + ' ' + GameElement.TXT_IS_NOT_CORRECT + '.', txt_n_min_max_players)
-        if n_humans != 1:
-            self.usage('The number of human players ' + str(n_humans) + ' ' + GameElement.TXT_IS_NOT_CORRECT + '.',
-                       txt_n_min_max_players)
+        self.color_player_names = [color_player.name for color_player in self.color_players]  # type: List[str]
+
+        self.check_player_list(sys.argv)
         # Read all the remaining data from the XML file: name of the game.
         self.game_name = xml_tree_root.find('game_name').text
         # Read all the remaining data from the XML file: 3 parts of the castle (sorted by number of PP decreasing).
@@ -1089,6 +1075,36 @@ class GameElement:
               str(len(self.buildings)) + ' buildings.')
         # Initialization of the game.
         self.game = Game(self, version, players)
+
+    def check_player_list(self,p_list,color_player_names = None):
+        n_args = len(p_list)
+        txt_n_min_max_players = str(self.n_min_players) + '..' + str(self.n_max_players)  # type: str
+        n_humans = 0  # type: int
+
+        
+        for arg in [p_list[i_arg] for i_arg in range(3, n_args)]:
+            list_arg = arg.split('=')  # type: List[str]
+            if len(list_arg) == 1:  # human: <color>
+                if list_arg[0] not in self.color_player_names:
+                    self.usage('The color ' + list_arg[0] + ' for the human of the argument ' + arg + ' ' +
+                                GameElement.TXT_IS_NOT_CORRECT + '.', txt_n_min_max_players)
+                else:
+                    n_humans += 1
+                    self.color_player_names.remove(list_arg[0])
+            elif len(list_arg) == 2:  # ai: <color=ai_name>
+                if list_arg[0] not in self.color_player_names:
+                    self.usage('The color ' + list_arg[0] + ' for an AI of the argument ' + arg + ' ' +
+                                GameElement.TXT_IS_NOT_CORRECT + '.', txt_n_min_max_players)
+                elif list_arg[1] not in AIPlayer.ai_names():
+                    self.usage('The name ' + list_arg[1] + ' of an AI of the argument ' + arg + ' ' +
+                                GameElement.TXT_IS_NOT_CORRECT + '.', txt_n_min_max_players)
+                else:
+                    self.color_player_names.remove(list_arg[0])
+            else:
+                self.usage('The argument ' + arg + ' ' + GameElement.TXT_IS_NOT_CORRECT + '.', txt_n_min_max_players)
+        if n_humans != 1:
+            self.usage('The number of human players ' + str(n_humans) + ' ' + GameElement.TXT_IS_NOT_CORRECT + '.',
+                        txt_n_min_max_players)
 
     @staticmethod
     def usage(error_msg: str, txt_n_min_max_players: str = '?') -> None:
