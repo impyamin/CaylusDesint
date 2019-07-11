@@ -1,0 +1,314 @@
+\hypertarget{classgame__mod_1_1game_1_1Game}{}\doxysection{game\+\_\+mod.\+game.\+Game Class Reference}
+\label{classgame__mod_1_1game_1_1Game}\index{game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_aed363441919f7d5b9f7ada1d7f6ea504}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, game\+\_\+element, version, players)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a4f53f53f4a72c9b4e9386ce92b00167f}{setup}} (self)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_acbc2ece65bc854e2f69f6ed8fcaf96da}{setup\+\_\+player\+\_\+buildings\+\_\+from\+\_\+pile\+\_\+to\+\_\+hand}} (self, \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player}{Player}} player, int n\+\_\+cards\+\_\+pile\+\_\+to\+\_\+hand)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a0938c982e7ccb6ac96c37a531e26b72f}{play}} (self)
+\item 
+def \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a4dd4629210597bc9249120f43723e337}{ask\+\_\+for\+\_\+replay}} (self)
+\begin{DoxyCompactList}\small\item\em Documentation for a function. \end{DoxyCompactList}\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a67b206fa466685e5c697badf38c4e60c}{play\+\_\+phase\+\_\+income}} (self)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a61022acac3063bcac327200601a36125}{play\+\_\+phase\+\_\+actions}} (self)
+\item 
+def \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a41b3195e3fa1b6bef542ce6833db0cdc}{possible\+\_\+actions}} (self, \mbox{\hyperlink{classphases__mod_1_1phases_1_1Phase}{Phase}} actions\+\_\+phase, \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player}{Player}} player)
+\item 
+def \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a41dcfaa6cbd592a061743fe05179df3c}{do\+\_\+player\+\_\+action\+\_\+chosen}} (self, \mbox{\hyperlink{classphases__mod_1_1phases_1_1Phase}{Phase}} actions\+\_\+phase, \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player}{Player}} player, player\+\_\+action\+\_\+chosen)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a0c38c27a4f864f16ceb63fbd2df64042}{play\+\_\+phase\+\_\+provost\+\_\+movements}} (self)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a095949a5c8be0317db53fbde4d017deb}{play\+\_\+phase\+\_\+building\+\_\+effects}} (self)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a5399f1bea6059c4ee58b2c5eac5183e6}{play\+\_\+phase\+\_\+castle}} (self)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_aff05502994b9d3f37f6435172060c1b3}{play\+\_\+phase\+\_\+end\+\_\+turn}} (self)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a80388c461fb4b1419b762cd5434c3a96}{winners}} (self)
+\item 
+None \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a4becca4feaff88096c12839e917ab7ef}{print\+\_\+turn\+\_\+begin}} (self, int n\+\_\+turns)
+\item 
+\mbox{\hyperlink{classphases__mod_1_1phases_1_1Phase}{Phase}} \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a0542494208ff5efe9a96b9272837d858}{get\+\_\+print\+\_\+phase\+\_\+begin}} (self, int phase\+\_\+numero)
+\item 
+int \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_af512cec740343600307ab97e467479eb}{remove\+\_\+tokens\+\_\+castle}} (self, int n\+\_\+prestige\+\_\+pt\+\_\+tokens\+\_\+to\+\_\+remove)
+\item 
+str \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a0b501d67937b48a86c1d3867dc64a845}{txt\+\_\+road}} (self, bool with\+\_\+prestige\+\_\+points)
+\item 
+str \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_ac35159dda252388587e4af36bb03c2d1}{txt\+\_\+one\+\_\+building\+\_\+worker\+\_\+road}} (self, building\+\_\+worker, bool with\+\_\+prestige\+\_\+points)
+\item 
+def \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a150c65d47355df16aa2cbb4d2893f476}{get\+\_\+available\+\_\+prestige\+\_\+buildings}} (self)
+\item 
+str \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a9597c9def80bf4355e7a3653fb335fdb}{txt\+\_\+available\+\_\+prestige\+\_\+buildings}} (self, bool with\+\_\+prestige\+\_\+points)
+\item 
+str \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a1c437df6a5b80272dfc30f33cfe65b79}{txt\+\_\+provost\+\_\+owner\+\_\+building}} (self)
+\item 
+int \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a54ce9c472c8f0fb66a35bba773e8888d}{get\+\_\+remaining\+\_\+n\+\_\+castle\+\_\+tokens}} (self)
+\item 
+bool \mbox{\hyperlink{classgame__mod_1_1game_1_1Game_a83b8fb45c4137ca576087219ddf6978a}{game\+\_\+ended}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_aaafc92f8a6e84440f1f4727af893c6c5}\label{classgame__mod_1_1game_1_1Game_aaafc92f8a6e84440f1f4727af893c6c5}} 
+{\bfseries game\+\_\+element}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a07953af5590013f1879fbc6e42abddb8}\label{classgame__mod_1_1game_1_1Game_a07953af5590013f1879fbc6e42abddb8}} 
+{\bfseries version}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_ac265dffc1dca3871e27a62b858798b56}\label{classgame__mod_1_1game_1_1Game_ac265dffc1dca3871e27a62b858798b56}} 
+{\bfseries players}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_ac24f466fee74b8c01c5d9c22fb084ddb}\label{classgame__mod_1_1game_1_1Game_ac24f466fee74b8c01c5d9c22fb084ddb}} 
+{\bfseries n\+\_\+players}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_ab962d46db582e720532a5af18e62ecb1}\label{classgame__mod_1_1game_1_1Game_ab962d46db582e720532a5af18e62ecb1}} 
+{\bfseries current\+\_\+buildings}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_aa8ac779424cf36cd556d494604215c04}\label{classgame__mod_1_1game_1_1Game_aa8ac779424cf36cd556d494604215c04}} 
+{\bfseries road}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a1603af9761de02818c2cbfeb48d9eafd}\label{classgame__mod_1_1game_1_1Game_a1603af9761de02818c2cbfeb48d9eafd}} 
+{\bfseries i\+\_\+provost}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a87467914bdb18d275e7813438c23080b}\label{classgame__mod_1_1game_1_1Game_a87467914bdb18d275e7813438c23080b}} 
+{\bfseries passing\+\_\+marker\+\_\+players}
+\item 
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a4193fea30b79497631aa29190949f8e8}\label{classgame__mod_1_1game_1_1Game_a4193fea30b79497631aa29190949f8e8}} 
+{\bfseries i\+\_\+first\+\_\+player}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Game Caylus Magna Carta.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_aed363441919f7d5b9f7ada1d7f6ea504}\label{classgame__mod_1_1game_1_1Game_aed363441919f7d5b9f7ada1d7f6ea504}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def game\+\_\+mod.\+game.\+Game.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{game\+\_\+element,  }\item[{}]{version,  }\item[{}]{players }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialization of the game.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a4dd4629210597bc9249120f43723e337}\label{classgame__mod_1_1game_1_1Game_a4dd4629210597bc9249120f43723e337}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!ask\_for\_replay@{ask\_for\_replay}}
+\index{ask\_for\_replay@{ask\_for\_replay}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{ask\_for\_replay()}{ask\_for\_replay()}}
+{\footnotesize\ttfamily def game\+\_\+mod.\+game.\+Game.\+ask\+\_\+for\+\_\+replay (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Documentation for a function. 
+
+More details. \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a41dcfaa6cbd592a061743fe05179df3c}\label{classgame__mod_1_1game_1_1Game_a41dcfaa6cbd592a061743fe05179df3c}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!do\_player\_action\_chosen@{do\_player\_action\_chosen}}
+\index{do\_player\_action\_chosen@{do\_player\_action\_chosen}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{do\_player\_action\_chosen()}{do\_player\_action\_chosen()}}
+{\footnotesize\ttfamily def game\+\_\+mod.\+game.\+Game.\+do\+\_\+player\+\_\+action\+\_\+chosen (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classphases__mod_1_1phases_1_1Phase}{Phase}}}]{actions\+\_\+phase,  }\item[{\mbox{\hyperlink{classplayer__mod_1_1player_1_1Player}{Player}}}]{player,  }\item[{}]{player\+\_\+action\+\_\+chosen }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do the action chosen by the player (excepted passing).\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a83b8fb45c4137ca576087219ddf6978a}\label{classgame__mod_1_1game_1_1Game_a83b8fb45c4137ca576087219ddf6978a}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!game\_ended@{game\_ended}}
+\index{game\_ended@{game\_ended}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{game\_ended()}{game\_ended()}}
+{\footnotesize\ttfamily  bool game\+\_\+mod.\+game.\+Game.\+game\+\_\+ended (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Is the game ended?\end{DoxyVerb}
+\begin{DoxyVerb}The game ends at the end of the turn when the stock has run out of prestige point tokens.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a150c65d47355df16aa2cbb4d2893f476}\label{classgame__mod_1_1game_1_1Game_a150c65d47355df16aa2cbb4d2893f476}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!get\_available\_prestige\_buildings@{get\_available\_prestige\_buildings}}
+\index{get\_available\_prestige\_buildings@{get\_available\_prestige\_buildings}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{get\_available\_prestige\_buildings()}{get\_available\_prestige\_buildings()}}
+{\footnotesize\ttfamily def game\+\_\+mod.\+game.\+Game.\+get\+\_\+available\+\_\+prestige\+\_\+buildings (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the available prestige buildings.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a0542494208ff5efe9a96b9272837d858}\label{classgame__mod_1_1game_1_1Game_a0542494208ff5efe9a96b9272837d858}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!get\_print\_phase\_begin@{get\_print\_phase\_begin}}
+\index{get\_print\_phase\_begin@{get\_print\_phase\_begin}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{get\_print\_phase\_begin()}{get\_print\_phase\_begin()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classphases__mod_1_1phases_1_1Phase}{Phase}} game\+\_\+mod.\+game.\+Game.\+get\+\_\+print\+\_\+phase\+\_\+begin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{phase\+\_\+numero }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print the beginning of a phase of a turn and get the phase.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a54ce9c472c8f0fb66a35bba773e8888d}\label{classgame__mod_1_1game_1_1Game_a54ce9c472c8f0fb66a35bba773e8888d}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!get\_remaining\_n\_castle\_tokens@{get\_remaining\_n\_castle\_tokens}}
+\index{get\_remaining\_n\_castle\_tokens@{get\_remaining\_n\_castle\_tokens}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{get\_remaining\_n\_castle\_tokens()}{get\_remaining\_n\_castle\_tokens()}}
+{\footnotesize\ttfamily  int game\+\_\+mod.\+game.\+Game.\+get\+\_\+remaining\+\_\+n\+\_\+castle\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the remaining number of tokens in the castle.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a0938c982e7ccb6ac96c37a531e26b72f}\label{classgame__mod_1_1game_1_1Game_a0938c982e7ccb6ac96c37a531e26b72f}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!play@{play}}
+\index{play@{play}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+play (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Play one game.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a61022acac3063bcac327200601a36125}\label{classgame__mod_1_1game_1_1Game_a61022acac3063bcac327200601a36125}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!play\_phase\_actions@{play\_phase\_actions}}
+\index{play\_phase\_actions@{play\_phase\_actions}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{play\_phase\_actions()}{play\_phase\_actions()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+play\+\_\+phase\+\_\+actions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Starting with the first player and then following in clockwise order, the players must pick one of the following actions:
+A) Pick a card
+The player pays 1 denier to the stock to take the first card on their pile and add it to their hand. If there are no cards left in the pile, the player shuffles the cards of their discard pile and builds a new pile.
+The number of cards a player may have in their hand is not limited.
+B) Replace all the cards in your hand
+The player pays 1 denier to the stock to discard all the cards in their hand (the player must get rid of them all), place them face up in the discard pile, and take the same number of cards from their pile. If there is not enough cards left in the pile, the player shuffles the cards of their discard pile and builds a new pile.
+C) Place a worker on a building
+The player pays 1 denier to the stock and places 1 worker on a card along the road. There can be only 1 worker per card. A player may place a worker on a neutral building, on one of their own buildings, or on a building belonging to someone else.
+Placing a worker on a residential building or a prestige building is forbidden.
+D) Construct a building from your hand
+The player takes a card from their hand, pays its cost (indicated in the top left-hand corner) to the stock, and adds the building at the end of the road. From this point on, the players may place a worker on the building when the time comes for them to choose an action.
+E) Construct a prestige building
+The player chooses a prestige building among those that are still available, pays its cost (indicated in the top left-hand corner of the card) to the stock, and places the prestige building ...
+    [Beginner version] ... before them (the building is NOT added to the end of the road).
+    [Standard version] ... on top of one of their own residential buildings.
+[Standard version] From now on, this residential building does not yield any income during phase 1.
+[Standard version] Remark: It is impossible to build a prestige building if you do not own any residential buildings.
+F) Passing
+The player puts their passing marker on the space of the bridge with the lowest number. The first player who passes gets 1 denier from the stock.
+Once a player has passed, they cannot take any actions for the remainder of the phase.
+Phase 2 lasts until all players have passed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a095949a5c8be0317db53fbde4d017deb}\label{classgame__mod_1_1game_1_1Game_a095949a5c8be0317db53fbde4d017deb}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!play\_phase\_building\_effects@{play\_phase\_building\_effects}}
+\index{play\_phase\_building\_effects@{play\_phase\_building\_effects}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{play\_phase\_building\_effects()}{play\_phase\_building\_effects()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+play\+\_\+phase\+\_\+building\+\_\+effects (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}[Standard version] Buildings are activated in order, starting at the beginning of the road, up to and including the building card the Provost is now occupying.
+● A building without a worker is not activated.
+● A building with a worker on it has a primary effect profiting the owner of the worker, then a secondary effect profiting the owner of the building.
+● If a player has placed a worker on one of their own buildings, they only take advantage of the building’s primary effect; the player may not choose the secondary effect.
+● [Standard version] The buildings beyond the Provost’s current location have no effect.
+The players get their workers back.
+Remark: The players do not have to use the effect (either primary or secondary) of a building. The owner of a building may use its secondary effect even if the worker’s owner chose not to use the primary effect.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a5399f1bea6059c4ee58b2c5eac5183e6}\label{classgame__mod_1_1game_1_1Game_a5399f1bea6059c4ee58b2c5eac5183e6}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!play\_phase\_castle@{play\_phase\_castle}}
+\index{play\_phase\_castle@{play\_phase\_castle}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{play\_phase\_castle()}{play\_phase\_castle()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+play\+\_\+phase\+\_\+castle (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Following the passing order, the players may offer batches to the castle (if they want to). A batch is composed of 3 resources: 1 food, 1 wood and 1 stone. Each player gives the stock their cubes accordingly and takes as many point tokens as they have given batches.
+Prestige point tokens are taken according to a certain order: first those of the Dungeon (red tokens), then those of the Walls (orange tokens) and finally those of the Towers (yellow tokens). A player may earn tokens of different colors in the same turn.
+A player cannot offer more batches than there are prestige point tokens left in the stock. So, it is possible for a player to have some batches left.
+The player who has offered the most batches during this phase takes 1 gold cube from the stock.
+In case of a draw, the player who offered that number of batches first wins the cube.
+If no-one has offered any batch during this phase, 2 tokens are removed from the stock of victory points - these tokens are removed from the game. As was the case for building, these tokens are taken from the proper section of the Castle (red, then orange, then yellow).
+If no token is left in the stock, the game is over.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_aff05502994b9d3f37f6435172060c1b3}\label{classgame__mod_1_1game_1_1Game_aff05502994b9d3f37f6435172060c1b3}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!play\_phase\_end\_turn@{play\_phase\_end\_turn}}
+\index{play\_phase\_end\_turn@{play\_phase\_end\_turn}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{play\_phase\_end\_turn()}{play\_phase\_end\_turn()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+play\+\_\+phase\+\_\+end\+\_\+turn (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}[Standard version] The Provost advances by 2 cards toward the end of the road. If there is only 1 card before the end of the road, the Provost only advances by 1 card. If the Provost is already at the end of the road, the Provost does not move.
+The first player card is passed to the player to the left of the current first player, and a new turn begins.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a67b206fa466685e5c697badf38c4e60c}\label{classgame__mod_1_1game_1_1Game_a67b206fa466685e5c697badf38c4e60c}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!play\_phase\_income@{play\_phase\_income}}
+\index{play\_phase\_income@{play\_phase\_income}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{play\_phase\_income()}{play\_phase\_income()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+play\+\_\+phase\+\_\+income (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player gets 2 deniers from the stock.
+[Standard version] Furthermore, each player also gets 1 denier per residential building (green background) they own along the road.
+[Standard version] Finally, if a player has built the Hotel, they get 1 more denier from the stock.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a0c38c27a4f864f16ceb63fbd2df64042}\label{classgame__mod_1_1game_1_1Game_a0c38c27a4f864f16ceb63fbd2df64042}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!play\_phase\_provost\_movements@{play\_phase\_provost\_movements}}
+\index{play\_phase\_provost\_movements@{play\_phase\_provost\_movements}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{play\_phase\_provost\_movements()}{play\_phase\_provost\_movements()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+play\+\_\+phase\+\_\+provost\+\_\+movements (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}[Standard version] Following the passing order of phase 2 (that is, according to the increasing numbers on the bridge), the players now have the opportunity to move the Provost along the road by paying deniers. The price is 1 denier per card; each player may pay up to 3 deniers.
+[Standard version] Remark: The Provost may not move beyond the limits of the road.
+[Standard version] There is only one turn to move the Provost. Once everyone has had an opportunity to move him, the phase is over.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a41b3195e3fa1b6bef542ce6833db0cdc}\label{classgame__mod_1_1game_1_1Game_a41b3195e3fa1b6bef542ce6833db0cdc}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!possible\_actions@{possible\_actions}}
+\index{possible\_actions@{possible\_actions}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{possible\_actions()}{possible\_actions()}}
+{\footnotesize\ttfamily def game\+\_\+mod.\+game.\+Game.\+possible\+\_\+actions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classphases__mod_1_1phases_1_1Phase}{Phase}}}]{actions\+\_\+phase,  }\item[{\mbox{\hyperlink{classplayer__mod_1_1player_1_1Player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List all the possible actions of the player. The list must contain passing action.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a4becca4feaff88096c12839e917ab7ef}\label{classgame__mod_1_1game_1_1Game_a4becca4feaff88096c12839e917ab7ef}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!print\_turn\_begin@{print\_turn\_begin}}
+\index{print\_turn\_begin@{print\_turn\_begin}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{print\_turn\_begin()}{print\_turn\_begin()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+print\+\_\+turn\+\_\+begin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n\+\_\+turns }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print the beginning of a turn.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_af512cec740343600307ab97e467479eb}\label{classgame__mod_1_1game_1_1Game_af512cec740343600307ab97e467479eb}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!remove\_tokens\_castle@{remove\_tokens\_castle}}
+\index{remove\_tokens\_castle@{remove\_tokens\_castle}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{remove\_tokens\_castle()}{remove\_tokens\_castle()}}
+{\footnotesize\ttfamily  int game\+\_\+mod.\+game.\+Game.\+remove\+\_\+tokens\+\_\+castle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n\+\_\+prestige\+\_\+pt\+\_\+tokens\+\_\+to\+\_\+remove }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove prestige point tokens in the castle and return the corresponding prestige points.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a4f53f53f4a72c9b4e9386ce92b00167f}\label{classgame__mod_1_1game_1_1Game_a4f53f53f4a72c9b4e9386ce92b00167f}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!setup@{setup}}
+\index{setup@{setup}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+setup (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Setup of the game.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_acbc2ece65bc854e2f69f6ed8fcaf96da}\label{classgame__mod_1_1game_1_1Game_acbc2ece65bc854e2f69f6ed8fcaf96da}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!setup\_player\_buildings\_from\_pile\_to\_hand@{setup\_player\_buildings\_from\_pile\_to\_hand}}
+\index{setup\_player\_buildings\_from\_pile\_to\_hand@{setup\_player\_buildings\_from\_pile\_to\_hand}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{setup\_player\_buildings\_from\_pile\_to\_hand()}{setup\_player\_buildings\_from\_pile\_to\_hand()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+setup\+\_\+player\+\_\+buildings\+\_\+from\+\_\+pile\+\_\+to\+\_\+hand (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classplayer__mod_1_1player_1_1Player}{Player}}}]{player,  }\item[{int}]{n\+\_\+cards\+\_\+pile\+\_\+to\+\_\+hand }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Setup of the game for the player buildings of a player moving from the pile to the hand.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a9597c9def80bf4355e7a3653fb335fdb}\label{classgame__mod_1_1game_1_1Game_a9597c9def80bf4355e7a3653fb335fdb}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!txt\_available\_prestige\_buildings@{txt\_available\_prestige\_buildings}}
+\index{txt\_available\_prestige\_buildings@{txt\_available\_prestige\_buildings}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{txt\_available\_prestige\_buildings()}{txt\_available\_prestige\_buildings()}}
+{\footnotesize\ttfamily  str game\+\_\+mod.\+game.\+Game.\+txt\+\_\+available\+\_\+prestige\+\_\+buildings (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{with\+\_\+prestige\+\_\+points }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the text of the available prestige buildings with the prestige points.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_ac35159dda252388587e4af36bb03c2d1}\label{classgame__mod_1_1game_1_1Game_ac35159dda252388587e4af36bb03c2d1}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!txt\_one\_building\_worker\_road@{txt\_one\_building\_worker\_road}}
+\index{txt\_one\_building\_worker\_road@{txt\_one\_building\_worker\_road}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{txt\_one\_building\_worker\_road()}{txt\_one\_building\_worker\_road()}}
+{\footnotesize\ttfamily  str game\+\_\+mod.\+game.\+Game.\+txt\+\_\+one\+\_\+building\+\_\+worker\+\_\+road (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{building\+\_\+worker,  }\item[{bool}]{with\+\_\+prestige\+\_\+points }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the text of one building and worker on the road with the prestige points.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a1c437df6a5b80272dfc30f33cfe65b79}\label{classgame__mod_1_1game_1_1Game_a1c437df6a5b80272dfc30f33cfe65b79}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!txt\_provost\_owner\_building@{txt\_provost\_owner\_building}}
+\index{txt\_provost\_owner\_building@{txt\_provost\_owner\_building}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{txt\_provost\_owner\_building()}{txt\_provost\_owner\_building()}}
+{\footnotesize\ttfamily  str game\+\_\+mod.\+game.\+Game.\+txt\+\_\+provost\+\_\+owner\+\_\+building (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the text of the Provost location in the building with its owner (a player).\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a0b501d67937b48a86c1d3867dc64a845}\label{classgame__mod_1_1game_1_1Game_a0b501d67937b48a86c1d3867dc64a845}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!txt\_road@{txt\_road}}
+\index{txt\_road@{txt\_road}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{txt\_road()}{txt\_road()}}
+{\footnotesize\ttfamily  str game\+\_\+mod.\+game.\+Game.\+txt\+\_\+road (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{with\+\_\+prestige\+\_\+points }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the text of the road with the prestige points.\end{DoxyVerb}
+ \mbox{\Hypertarget{classgame__mod_1_1game_1_1Game_a80388c461fb4b1419b762cd5434c3a96}\label{classgame__mod_1_1game_1_1Game_a80388c461fb4b1419b762cd5434c3a96}} 
+\index{game\_mod.game.Game@{game\_mod.game.Game}!winners@{winners}}
+\index{winners@{winners}!game\_mod.game.Game@{game\_mod.game.Game}}
+\doxysubsubsection{\texorpdfstring{winners()}{winners()}}
+{\footnotesize\ttfamily  None game\+\_\+mod.\+game.\+Game.\+winners (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The player with the most prestige points is the winner. There is no tie-breaker.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/game\+\_\+mod/game.\+py\end{DoxyCompactItemize}

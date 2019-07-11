@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['game',['Game',['../classgame__mod_1_1game_1_1Game.html',1,'game_mod::game']]],
+  ['game_5fended',['game_ended',['../classgame__mod_1_1game_1_1Game.html#a83b8fb45c4137ca576087219ddf6978a',1,'game_mod::game::Game']]],
+  ['gameelement',['GameElement',['../classgame__mod_1_1game_1_1GameElement.html',1,'game_mod::game']]],
+  ['get_5fany_5feffect_5ffrom_5fxml_5ftag',['get_any_effect_from_XML_tag',['../classgame__mod_1_1game_1_1GameElement.html#aa1a79e015a59072aa673934e1a889976',1,'game_mod::game::GameElement']]],
+  ['get_5fany_5feffect_5fgain_5ffrom_5fxml_5ftag',['get_any_effect_gain_from_XML_tag',['../classgame__mod_1_1game_1_1GameElement.html#a0bde61a221aeef559ab32e0d9685bcba',1,'game_mod::game::GameElement']]],
+  ['get_5favailable_5fprestige_5fbuildings',['get_available_prestige_buildings',['../classgame__mod_1_1game_1_1Game.html#a150c65d47355df16aa2cbb4d2893f476',1,'game_mod::game::Game']]],
+  ['get_5fbuilding_5ftype',['get_building_type',['../classbuildings__mod_1_1buildings_1_1BackgroundPlayerBuilding.html#a694a6b136239e235609c283a3d49e5d4',1,'buildings_mod.buildings.BackgroundPlayerBuilding.get_building_type()'],['../classbuildings__mod_1_1buildings_1_1NeutralBuilding.html#a98a37b3b817ae60665dc697a8e14a4bb',1,'buildings_mod.buildings.NeutralBuilding.get_building_type()'],['../classbuildings__mod_1_1buildings_1_1PrestigeBuilding.html#ac4ded0cf88cb1e3c74ac1702798e288d',1,'buildings_mod.buildings.PrestigeBuilding.get_building_type()'],['../classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding.html#a90f375da2d26997359bc216712a0be1c',1,'buildings_mod.playerBuildings.PlayerBuilding.get_building_type()']]],
+  ['get_5feffect_5ffrom_5fxml_5ftag',['get_effect_from_XML_tag',['../classgame__mod_1_1game_1_1GameElement.html#ae5fcac7a2e8eef2526d83b2fa83e77de',1,'game_mod::game::GameElement']]],
+  ['get_5feffect_5fgain_5ffrom_5fxml_5ftag',['get_effect_gain_from_XML_tag',['../classgame__mod_1_1game_1_1GameElement.html#a1226d934cd4b59bc732783733f1fbe46',1,'game_mod::game::GameElement']]],
+  ['get_5fname_5fabbreviation',['get_name_abbreviation',['../classmoneyres__mod_1_1moneyres_1_1MoneyResource.html#a173e1805a35fcec8f60e1e4e5f8b10ed',1,'moneyres_mod::moneyres::MoneyResource']]],
+  ['get_5fname_5fabbreviation_5fresources',['get_name_abbreviation_resources',['../classmoneyres__mod_1_1moneyres_1_1Resource.html#ab7895068328fa273dd5baeb5449004ce',1,'moneyres_mod::moneyres::Resource']]],
+  ['get_5fneutral_5fbuilding',['get_neutral_building',['../classbuildings__mod_1_1buildings_1_1NeutralBuilding.html#a7b2592af974d9c677839eb2fffa144e3',1,'buildings_mod::buildings::NeutralBuilding']]],
+  ['get_5fone_5fmoney_5feffect_5fgain_5ffrom_5fxml_5ftag',['get_one_money_effect_gain_from_XML_tag',['../classgame__mod_1_1game_1_1GameElement.html#a10fe0631fb35e6ebb5297d640057fdc7',1,'game_mod::game::GameElement']]],
+  ['get_5fone_5fresource_5ftag_5ffrom_5fxml_5ftag',['get_one_resource_tag_from_XML_tag',['../classgame__mod_1_1game_1_1GameElement.html#ada1f4c7dc0d3c71d8124e9ff37365097',1,'game_mod::game::GameElement']]],
+  ['get_5fplayer_5fbuildings_5fby_5flocation',['get_player_buildings_by_location',['../classplayer__mod_1_1player_1_1Player.html#a99354fd7a749ae43f7044db411dfaf86',1,'player_mod::player::Player']]],
+  ['get_5fprint_5fphase_5fbegin',['get_print_phase_begin',['../classgame__mod_1_1game_1_1Game.html#a0542494208ff5efe9a96b9272837d858',1,'game_mod::game::Game']]],
+  ['get_5fremaining_5fn_5fcastle_5ftokens',['get_remaining_n_castle_tokens',['../classgame__mod_1_1game_1_1Game.html#a54ce9c472c8f0fb66a35bba773e8888d',1,'game_mod::game::Game']]],
+  ['get_5fresource',['get_resource',['../classmoneyres__mod_1_1moneyres_1_1Resource.html#af0c8693b69ebe3acaa7e99be84ac89a7',1,'moneyres_mod::moneyres::Resource']]],
+  ['get_5fresource_5fname_5ffrom_5fxml_5ftag',['get_resource_name_from_XML_tag',['../classgame__mod_1_1game_1_1GameElement.html#a00398f496c7f3b10bad7dcd4b6e7c204',1,'game_mod::game::GameElement']]],
+  ['get_5fresources_5ffrom_5fxml_5ftag',['get_resources_from_XML_tag',['../classgame__mod_1_1game_1_1GameElement.html#a28c05158ec23d72ed4389672f549fc55',1,'game_mod::game::GameElement']]],
+  ['get_5fwild_5fresource',['get_wild_resource',['../classmoneyres__mod_1_1moneyres_1_1Resource.html#a52b2334e15f9a48f223867eb47104a2e',1,'moneyres_mod::moneyres::Resource']]],
+  ['goldmineplayerbuilding',['GoldMinePlayerBuilding',['../classbuildings__mod_1_1playerBuildings_1_1GoldMinePlayerBuilding.html',1,'buildings_mod::playerBuildings']]]
+];

@@ -1,4 +1,6 @@
 #!/usr/bin/python
+
+
 import sys
 from os import path 
 import xml.etree.ElementTree as ET
@@ -152,6 +154,12 @@ class Game:
         self.winners()
         self.ask_for_replay()
     
+
+    
+
+    ## Documentation for a function.
+    #
+#  More details.
     def ask_for_replay(self):
         response = input("Game has ended, wanna play again ? [Y/N]")
         if response == 'Y':
@@ -161,7 +169,6 @@ class Game:
             p_list = []
             for p in response.split(' ') : 
                 p_list.append(p)
-            self.game_element.check_player_list(p_list)
             self.setup()
             self.play()
 

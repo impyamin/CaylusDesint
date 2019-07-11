@@ -1,0 +1,86 @@
+\hypertarget{classbuildings__mod_1_1buildings_1_1NeutralBuilding}{}\doxysection{buildings\+\_\+mod.\+buildings.\+Neutral\+Building Class Reference}
+\label{classbuildings__mod_1_1buildings_1_1NeutralBuilding}\index{buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}}
+Inheritance diagram for buildings\+\_\+mod.\+buildings.\+Neutral\+Building\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classbuildings__mod_1_1buildings_1_1NeutralBuilding}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a9d6c1f52402b5123e9114075127fb638}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bool belongs\+\_\+to\+\_\+beginner\+\_\+version, bool can\+\_\+be\+\_\+a\+\_\+prestige\+\_\+building, bool allows\+\_\+to\+\_\+place\+\_\+a\+\_\+worker, str front\+\_\+color, str name, int n\+\_\+prestige\+\_\+pts, Effect primary\+\_\+effect, resource\+\_\+costs=None)
+\item 
+def \mbox{\hyperlink{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a98a37b3b817ae60665dc697a8e14a4bb}{get\+\_\+building\+\_\+type}} (self)
+\item 
+None \mbox{\hyperlink{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a28ca3129a7dbb8622f25e85b896abcc7}{apply\+\_\+primary\+\_\+effect}} (self, Player player)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a7b2592af974d9c677839eb2fffa144e3}{get\+\_\+neutral\+\_\+building}} (str name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a5e43d0875a846682c04e7f4814673021}\label{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a5e43d0875a846682c04e7f4814673021}} 
+dictionary {\bfseries neutral\+\_\+buildings} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}All 5 neutral buildings (pink cards): park, forest, quarry, peddler, trading post.\end{DoxyVerb}
+\begin{DoxyVerb}Each neutral building is described by its name and effect (effect phase).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a9d6c1f52402b5123e9114075127fb638}\label{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a9d6c1f52402b5123e9114075127fb638}} 
+\index{buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def buildings\+\_\+mod.\+buildings.\+Neutral\+Building.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{belongs\+\_\+to\+\_\+beginner\+\_\+version,  }\item[{bool}]{can\+\_\+be\+\_\+a\+\_\+prestige\+\_\+building,  }\item[{bool}]{allows\+\_\+to\+\_\+place\+\_\+a\+\_\+worker,  }\item[{str}]{front\+\_\+color,  }\item[{str}]{name,  }\item[{int}]{n\+\_\+prestige\+\_\+pts,  }\item[{Effect}]{primary\+\_\+effect,  }\item[{}]{resource\+\_\+costs = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialization of a neutral building.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classbuildings__mod_1_1buildings_1_1Building_a5717a86034481f085785857345da0124}{buildings\+\_\+mod.\+buildings.\+Building}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classbuildings__mod_1_1buildings_1_1PeddlerNeutralBuilding_a742f19e90bab0090292d2ff995749f2b}{buildings\+\_\+mod.\+buildings.\+Peddler\+Neutral\+Building}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a28ca3129a7dbb8622f25e85b896abcc7}\label{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a28ca3129a7dbb8622f25e85b896abcc7}} 
+\index{buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}!apply\_primary\_effect@{apply\_primary\_effect}}
+\index{apply\_primary\_effect@{apply\_primary\_effect}!buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}}
+\doxysubsubsection{\texorpdfstring{apply\_primary\_effect()}{apply\_primary\_effect()}}
+{\footnotesize\ttfamily  None buildings\+\_\+mod.\+buildings.\+Neutral\+Building.\+apply\+\_\+primary\+\_\+effect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Player}]{player }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply the (default that is for park, forest, quarry and trading post) effect of a neutral building.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classbuildings__mod_1_1buildings_1_1PeddlerNeutralBuilding_aa26cd59776bb83c876930f4518b1e671}{buildings\+\_\+mod.\+buildings.\+Peddler\+Neutral\+Building}}.
+
+\mbox{\Hypertarget{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a98a37b3b817ae60665dc697a8e14a4bb}\label{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a98a37b3b817ae60665dc697a8e14a4bb}} 
+\index{buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}!get\_building\_type@{get\_building\_type}}
+\index{get\_building\_type@{get\_building\_type}!buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}}
+\doxysubsubsection{\texorpdfstring{get\_building\_type()}{get\_building\_type()}}
+{\footnotesize\ttfamily def buildings\+\_\+mod.\+buildings.\+Neutral\+Building.\+get\+\_\+building\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Indicates that this building is a neutral building.\end{DoxyVerb}
+ \mbox{\Hypertarget{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a7b2592af974d9c677839eb2fffa144e3}\label{classbuildings__mod_1_1buildings_1_1NeutralBuilding_a7b2592af974d9c677839eb2fffa144e3}} 
+\index{buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}!get\_neutral\_building@{get\_neutral\_building}}
+\index{get\_neutral\_building@{get\_neutral\_building}!buildings\_mod.buildings.NeutralBuilding@{buildings\_mod.buildings.NeutralBuilding}}
+\doxysubsubsection{\texorpdfstring{get\_neutral\_building()}{get\_neutral\_building()}}
+{\footnotesize\ttfamily def buildings\+\_\+mod.\+buildings.\+Neutral\+Building.\+get\+\_\+neutral\+\_\+building (\begin{DoxyParamCaption}\item[{str}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Get a neutral building from its name.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/buildings\+\_\+mod/buildings.\+py\end{DoxyCompactItemize}

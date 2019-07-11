@@ -1,0 +1,91 @@
+\hypertarget{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding}{}\doxysection{buildings\+\_\+mod.\+player\+Buildings.\+Player\+Building Class Reference}
+\label{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding}\index{buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}}
+Inheritance diagram for buildings\+\_\+mod.\+player\+Buildings.\+Player\+Building\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.547170cm]{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a54a1bec9c10f2812336e7b84a12d99fb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bool belongs\+\_\+to\+\_\+beginner\+\_\+version, bool can\+\_\+be\+\_\+a\+\_\+prestige\+\_\+building, bool allows\+\_\+to\+\_\+place\+\_\+a\+\_\+worker, str front\+\_\+color, str name, int n\+\_\+prestige\+\_\+pts, Effect primary\+\_\+effect, resource\+\_\+costs, bool can\+\_\+be\+\_\+a\+\_\+residential\+\_\+building, Effect secondary\+\_\+effect, Color\+Player color\+\_\+player)
+\item 
+def \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a90f375da2d26997359bc216712a0be1c}{get\+\_\+building\+\_\+type}} (self)
+\item 
+None \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_ac11bf7adedff5e50e251b8bf7d2d5717}{apply\+\_\+primary\+\_\+effect}} (self, Player player)
+\item 
+None \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a33bb1acec92fd1d763fbaac24a04b8ed}{apply\+\_\+secondary\+\_\+effect}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_af2419613b38930533e7ca699d29644b9}\label{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_af2419613b38930533e7ca699d29644b9}} 
+{\bfseries can\+\_\+be\+\_\+a\+\_\+residential\+\_\+building}
+\item 
+\mbox{\Hypertarget{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_aa081f8b3342529e4b7784bd2769ffdf0}\label{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_aa081f8b3342529e4b7784bd2769ffdf0}} 
+{\bfseries secondary\+\_\+effect}
+\item 
+\mbox{\Hypertarget{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_af832ad924099e31f6c2dae3a405d2e22}\label{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_af832ad924099e31f6c2dae3a405d2e22}} 
+{\bfseries color\+\_\+player}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A set per player of all 12 player buildings (cards of the color of the player): small farm, small sawmill,
+small quarry, peddler, market, lawyer, large farm, large sawmill, large quarry, gold mine, bank, church.\end{DoxyVerb}
+\begin{DoxyVerb}Each player building is described by its front color, name, cost (number of food, wood, stone or of any type),
+number of prestige points, [optionally] construction (actions phase), primary and secondary effect (effect phase).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a54a1bec9c10f2812336e7b84a12d99fb}\label{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a54a1bec9c10f2812336e7b84a12d99fb}} 
+\index{buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def buildings\+\_\+mod.\+player\+Buildings.\+Player\+Building.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{belongs\+\_\+to\+\_\+beginner\+\_\+version,  }\item[{bool}]{can\+\_\+be\+\_\+a\+\_\+prestige\+\_\+building,  }\item[{bool}]{allows\+\_\+to\+\_\+place\+\_\+a\+\_\+worker,  }\item[{str}]{front\+\_\+color,  }\item[{str}]{name,  }\item[{int}]{n\+\_\+prestige\+\_\+pts,  }\item[{Effect}]{primary\+\_\+effect,  }\item[{}]{resource\+\_\+costs,  }\item[{bool}]{can\+\_\+be\+\_\+a\+\_\+residential\+\_\+building,  }\item[{Effect}]{secondary\+\_\+effect,  }\item[{Color\+Player}]{color\+\_\+player }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialization of a player building.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1ChurchPlayerBuilding_a46d2bbc1d16dc047a60e908514ba9261}{buildings\+\_\+mod.\+player\+Buildings.\+Church\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1BankPlayerBuilding_a51c5ad81141ba8231560210678d5c57a}{buildings\+\_\+mod.\+player\+Buildings.\+Bank\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1GoldMinePlayerBuilding_a738d6428e0915051bdf97c7f239cac04}{buildings\+\_\+mod.\+player\+Buildings.\+Gold\+Mine\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1MarketPlayerBuilding_a84ac9ef77f4eed6517a9a2f1fac2682f}{buildings\+\_\+mod.\+player\+Buildings.\+Market\+Player\+Building}}, and \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1PeddlerPlayerBuilding_aca69397aa58fb5fa8d56f20ab0f3180c}{buildings\+\_\+mod.\+player\+Buildings.\+Peddler\+Player\+Building}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_ac11bf7adedff5e50e251b8bf7d2d5717}\label{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_ac11bf7adedff5e50e251b8bf7d2d5717}} 
+\index{buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}!apply\_primary\_effect@{apply\_primary\_effect}}
+\index{apply\_primary\_effect@{apply\_primary\_effect}!buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}}
+\doxysubsubsection{\texorpdfstring{apply\_primary\_effect()}{apply\_primary\_effect()}}
+{\footnotesize\ttfamily  None buildings\+\_\+mod.\+player\+Buildings.\+Player\+Building.\+apply\+\_\+primary\+\_\+effect (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Player}]{player }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply the (default) primary effect of a player building.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1ChurchPlayerBuilding_a4f0a99c30a4ff4d22e52e960668d5ceb}{buildings\+\_\+mod.\+player\+Buildings.\+Church\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1BankPlayerBuilding_acd2d66bac81b123e1cb1b549f5026506}{buildings\+\_\+mod.\+player\+Buildings.\+Bank\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1GoldMinePlayerBuilding_ae023c5ff62862b571f827f92879c977b}{buildings\+\_\+mod.\+player\+Buildings.\+Gold\+Mine\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1MarketPlayerBuilding_afdd5c047ac56a5ee6172dbfa73694bad}{buildings\+\_\+mod.\+player\+Buildings.\+Market\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1PeddlerPlayerBuilding_ab265d028bc1763766b271b46e161b47d}{buildings\+\_\+mod.\+player\+Buildings.\+Peddler\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1LawyerPlayerBuilding_a3a800ab166ba16e08d4925e33446e35e}{buildings\+\_\+mod.\+player\+Buildings.\+Lawyer\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1LargeProductionPlayerBuilding_af174272471f681e9384fff7e165bf6b1}{buildings\+\_\+mod.\+player\+Buildings.\+Large\+Production\+Player\+Building}}, and \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1SmallProductionPlayerBuilding_a41865ed8fc2ce01b9e6ed946e4415dda}{buildings\+\_\+mod.\+player\+Buildings.\+Small\+Production\+Player\+Building}}.
+
+\mbox{\Hypertarget{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a33bb1acec92fd1d763fbaac24a04b8ed}\label{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a33bb1acec92fd1d763fbaac24a04b8ed}} 
+\index{buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}!apply\_secondary\_effect@{apply\_secondary\_effect}}
+\index{apply\_secondary\_effect@{apply\_secondary\_effect}!buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}}
+\doxysubsubsection{\texorpdfstring{apply\_secondary\_effect()}{apply\_secondary\_effect()}}
+{\footnotesize\ttfamily  None buildings\+\_\+mod.\+player\+Buildings.\+Player\+Building.\+apply\+\_\+secondary\+\_\+effect (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply the (default) secondary effect of a player building.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1ChurchPlayerBuilding_a55794396b94a35402db3afd424827d0e}{buildings\+\_\+mod.\+player\+Buildings.\+Church\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1BankPlayerBuilding_a6877ba25b3f9935494dccfe2ba57754d}{buildings\+\_\+mod.\+player\+Buildings.\+Bank\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1GoldMinePlayerBuilding_a5e666cb21cf0ff63f8e05d16ffe72ca9}{buildings\+\_\+mod.\+player\+Buildings.\+Gold\+Mine\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1MarketPlayerBuilding_a970532ecb6cc9b62906a4e54b3cb32fe}{buildings\+\_\+mod.\+player\+Buildings.\+Market\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1PeddlerPlayerBuilding_aed3517f1e58b880f102975998ff78c2b}{buildings\+\_\+mod.\+player\+Buildings.\+Peddler\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1LawyerPlayerBuilding_a41cc7e8cb9aebddfb040720375547a7c}{buildings\+\_\+mod.\+player\+Buildings.\+Lawyer\+Player\+Building}}, \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1LargeProductionPlayerBuilding_a10102e648f242f0618b18be92ccdbe5e}{buildings\+\_\+mod.\+player\+Buildings.\+Large\+Production\+Player\+Building}}, and \mbox{\hyperlink{classbuildings__mod_1_1playerBuildings_1_1SmallProductionPlayerBuilding_a158590af365fa9302f6a53f696540398}{buildings\+\_\+mod.\+player\+Buildings.\+Small\+Production\+Player\+Building}}.
+
+\mbox{\Hypertarget{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a90f375da2d26997359bc216712a0be1c}\label{classbuildings__mod_1_1playerBuildings_1_1PlayerBuilding_a90f375da2d26997359bc216712a0be1c}} 
+\index{buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}!get\_building\_type@{get\_building\_type}}
+\index{get\_building\_type@{get\_building\_type}!buildings\_mod.playerBuildings.PlayerBuilding@{buildings\_mod.playerBuildings.PlayerBuilding}}
+\doxysubsubsection{\texorpdfstring{get\_building\_type()}{get\_building\_type()}}
+{\footnotesize\ttfamily def buildings\+\_\+mod.\+player\+Buildings.\+Player\+Building.\+get\+\_\+building\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Indicates that this building is a player building.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/buildings\+\_\+mod/player\+Buildings.\+py\end{DoxyCompactItemize}

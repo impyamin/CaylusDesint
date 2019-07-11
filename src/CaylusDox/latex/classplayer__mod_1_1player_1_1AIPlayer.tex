@@ -1,0 +1,186 @@
+\hypertarget{classplayer__mod_1_1player_1_1AIPlayer}{}\doxysection{player\+\_\+mod.\+player.\+A\+I\+Player Class Reference}
+\label{classplayer__mod_1_1player_1_1AIPlayer}\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+Inheritance diagram for player\+\_\+mod.\+player.\+A\+I\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classplayer__mod_1_1player_1_1AIPlayer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_ad68d71ac2726fbba51b66c695c7634d2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classplayer__mod_1_1player_1_1ColorPlayer}{Color\+Player}} color\+\_\+player)
+\item 
+bool \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_afebc18d77a522411781c8b41fcb3bac8}{is\+\_\+human}} (self)
+\item 
+bool \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_adc83f16f280225a062d7a4bbf825410f}{choose\+\_\+discard\+\_\+hand\+\_\+for\+\_\+new}} (self)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_aee2f64269a1f7ca0e271cb53271f2b52}{choose\+\_\+action}} (self, possible\+\_\+actions)
+\item 
+int \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_a11dd7ce3d7c43fbf92036c835a492c63}{choose\+\_\+n\+\_\+provost\+\_\+movement}} (self, int n\+\_\+min\+\_\+provost\+\_\+movements\+\_\+player, int n\+\_\+max\+\_\+provost\+\_\+movements\+\_\+player)
+\item 
+\mbox{\hyperlink{classmoneyres__mod_1_1moneyres_1_1Resource}{Resource}} \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_ac859a55a9ec0577c575a55c16b40b5e9}{choose\+\_\+buy\+\_\+resource}} (self, Money\+Resource money\+\_\+resource\+\_\+cost, int qty\+\_\+cost, resource\+\_\+gain\+\_\+choices, int qty\+\_\+gain)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_aa8c301ae73fab8e06ff2b312bdfb7eb1}{choose\+\_\+buy\+\_\+resource\+\_\+multi}} (self, costs, resource\+\_\+gain\+\_\+choices, int qty\+\_\+gain)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_a697f48d0c9fcdd1c734187a46b344dcd}{choose\+\_\+buy\+\_\+castle\+\_\+multi}} (self, costs, castle\+\_\+gain\+\_\+choices)
+\item 
+\mbox{\hyperlink{classmoneyres__mod_1_1moneyres_1_1Resource}{Resource}} \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_ab6c6ebd91b1736a181d0893c2ff1eb89}{choose\+\_\+exchange\+\_\+resource}} (self, bool can\+\_\+no\+\_\+use\+\_\+effect, int qty\+\_\+cost, resource\+\_\+cost\+\_\+choices, Money\+Resource money\+\_\+resource\+\_\+gain, int qty\+\_\+gain)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_abd9083ace54c9e842a26b830cbfeaec4}{choose\+\_\+construct\+\_\+residence}} (self, resource\+\_\+costs, i\+\_\+road\+\_\+buildings\+\_\+on\+\_\+road)
+\item 
+int \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_a2f4b70a3f819d804bc5ff41dfdbebc18}{choose\+\_\+n\+\_\+batches\+\_\+to\+\_\+castle}} (self, int \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ad15bd3cceec4aae70858175df325a126}{n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_acdd41fb5d5c6f708b26aa22d96726836}{ai\+\_\+names}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}AI (artificial intelligence) player.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_ad68d71ac2726fbba51b66c695c7634d2}\label{classplayer__mod_1_1player_1_1AIPlayer_ad68d71ac2726fbba51b66c695c7634d2}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+A\+I\+Player.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classplayer__mod_1_1player_1_1ColorPlayer}{Color\+Player}}}]{color\+\_\+player }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialization of an AI player.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a060b38f394bd24553e483ee5eff49ca4}{player\+\_\+mod.\+player.\+Player}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AdvancedAIPlayer_a13b9dd0b1b55ebcce1dec947daeab83d}{player\+\_\+mod.\+player.\+Advanced\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1BasicAIPlayer_ac6681d045707a349d38a222b1fefc404}{player\+\_\+mod.\+player.\+Basic\+A\+I\+Player}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_acdd41fb5d5c6f708b26aa22d96726836}\label{classplayer__mod_1_1player_1_1AIPlayer_acdd41fb5d5c6f708b26aa22d96726836}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!ai\_names@{ai\_names}}
+\index{ai\_names@{ai\_names}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{ai\_names()}{ai\_names()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+A\+I\+Player.\+ai\+\_\+names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}AI (artificial intelligence) names.\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_aee2f64269a1f7ca0e271cb53271f2b52}\label{classplayer__mod_1_1player_1_1AIPlayer_aee2f64269a1f7ca0e271cb53271f2b52}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_action@{choose\_action}}
+\index{choose\_action@{choose\_action}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_action()}{choose\_action()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+action (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{possible\+\_\+actions }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Choose one of the possible actions.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ac12a3bb6c0f20f43400c0f8223f9a881}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_a697f48d0c9fcdd1c734187a46b344dcd}\label{classplayer__mod_1_1player_1_1AIPlayer_a697f48d0c9fcdd1c734187a46b344dcd}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_buy\_castle\_multi@{choose\_buy\_castle\_multi}}
+\index{choose\_buy\_castle\_multi@{choose\_buy\_castle\_multi}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_buy\_castle\_multi()}{choose\_buy\_castle\_multi()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+buy\+\_\+castle\+\_\+multi (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{costs,  }\item[{}]{castle\+\_\+gain\+\_\+choices }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A player can choose to apply several (one or more) times to buy some tokens of the castle with money (e.g. effects of church player buldings).\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ab2619d0db2c67ccaa2753eaaa917f0e2}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_ac859a55a9ec0577c575a55c16b40b5e9}\label{classplayer__mod_1_1player_1_1AIPlayer_ac859a55a9ec0577c575a55c16b40b5e9}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_buy\_resource@{choose\_buy\_resource}}
+\index{choose\_buy\_resource@{choose\_buy\_resource}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_buy\_resource()}{choose\_buy\_resource()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classmoneyres__mod_1_1moneyres_1_1Resource}{Resource}} player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+buy\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Money\+Resource}]{money\+\_\+resource\+\_\+cost,  }\item[{int}]{qty\+\_\+cost,  }\item[{}]{resource\+\_\+gain\+\_\+choices,  }\item[{int}]{qty\+\_\+gain }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A player can choose to buy some resource with money (e.g. peddler neutral building, secondary effects of peddler and bank player buldings).\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a00f9072e492812f1c344382b017f7ffe}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_aa8c301ae73fab8e06ff2b312bdfb7eb1}\label{classplayer__mod_1_1player_1_1AIPlayer_aa8c301ae73fab8e06ff2b312bdfb7eb1}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_buy\_resource\_multi@{choose\_buy\_resource\_multi}}
+\index{choose\_buy\_resource\_multi@{choose\_buy\_resource\_multi}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_buy\_resource\_multi()}{choose\_buy\_resource\_multi()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+buy\+\_\+resource\+\_\+multi (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{costs,  }\item[{}]{resource\+\_\+gain\+\_\+choices,  }\item[{int}]{qty\+\_\+gain }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A player can choose to apply 0, 1 or 2 times to buy some resource with money (e.g. primary effects of peddler and bank player buldings).\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ad6541e795e535960f42ce01508e33e70}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_abd9083ace54c9e842a26b830cbfeaec4}\label{classplayer__mod_1_1player_1_1AIPlayer_abd9083ace54c9e842a26b830cbfeaec4}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_construct\_residence@{choose\_construct\_residence}}
+\index{choose\_construct\_residence@{choose\_construct\_residence}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_construct\_residence()}{choose\_construct\_residence()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+construct\+\_\+residence (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{resource\+\_\+costs,  }\item[{}]{i\+\_\+road\+\_\+buildings\+\_\+on\+\_\+road }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player can construct a residential building by turning over one of his/her cards along the road.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a7438a51d7f929f6f88380b7abc3cc33d}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_adc83f16f280225a062d7a4bbf825410f}\label{classplayer__mod_1_1player_1_1AIPlayer_adc83f16f280225a062d7a4bbf825410f}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_discard\_hand\_for\_new@{choose\_discard\_hand\_for\_new}}
+\index{choose\_discard\_hand\_for\_new@{choose\_discard\_hand\_for\_new}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_discard\_hand\_for\_new()}{choose\_discard\_hand\_for\_new()}}
+{\footnotesize\ttfamily  bool player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+discard\+\_\+hand\+\_\+for\+\_\+new (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player can discard all the cards in his/her hand and take new cards.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a2c3d5de8d2527a8ad05a49b3e2d4a472}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_ab6c6ebd91b1736a181d0893c2ff1eb89}\label{classplayer__mod_1_1player_1_1AIPlayer_ab6c6ebd91b1736a181d0893c2ff1eb89}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_exchange\_resource@{choose\_exchange\_resource}}
+\index{choose\_exchange\_resource@{choose\_exchange\_resource}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_exchange\_resource()}{choose\_exchange\_resource()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classmoneyres__mod_1_1moneyres_1_1Resource}{Resource}} player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+exchange\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{can\+\_\+no\+\_\+use\+\_\+effect,  }\item[{int}]{qty\+\_\+cost,  }\item[{}]{resource\+\_\+cost\+\_\+choices,  }\item[{Money\+Resource}]{money\+\_\+resource\+\_\+gain,  }\item[{int}]{qty\+\_\+gain }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A player can choose to exchange some resource with some money or other resource, and may not use the effect (e.g. primary effect of market player building, secondary effect of gold mine player building).\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a429ac17cedd7d49b5b7b97b5f4aa418c}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_a2f4b70a3f819d804bc5ff41dfdbebc18}\label{classplayer__mod_1_1player_1_1AIPlayer_a2f4b70a3f819d804bc5ff41dfdbebc18}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_n\_batches\_to\_castle@{choose\_n\_batches\_to\_castle}}
+\index{choose\_n\_batches\_to\_castle@{choose\_n\_batches\_to\_castle}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_n\_batches\_to\_castle()}{choose\_n\_batches\_to\_castle()}}
+{\footnotesize\ttfamily  int player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+n\+\_\+batches\+\_\+to\+\_\+castle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player may offer batches to the castle.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a2b73f797b471466666dc16be659f9e5a}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_a11dd7ce3d7c43fbf92036c835a492c63}\label{classplayer__mod_1_1player_1_1AIPlayer_a11dd7ce3d7c43fbf92036c835a492c63}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!choose\_n\_provost\_movement@{choose\_n\_provost\_movement}}
+\index{choose\_n\_provost\_movement@{choose\_n\_provost\_movement}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{choose\_n\_provost\_movement()}{choose\_n\_provost\_movement()}}
+{\footnotesize\ttfamily  int player\+\_\+mod.\+player.\+A\+I\+Player.\+choose\+\_\+n\+\_\+provost\+\_\+movement (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n\+\_\+min\+\_\+provost\+\_\+movements\+\_\+player,  }\item[{int}]{n\+\_\+max\+\_\+provost\+\_\+movements\+\_\+player }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player can move the Provost along the road by paying deniers.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a19d3e4b878f890dc0a665e27df73532b}{player\+\_\+mod.\+player.\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1AIPlayer_afebc18d77a522411781c8b41fcb3bac8}\label{classplayer__mod_1_1player_1_1AIPlayer_afebc18d77a522411781c8b41fcb3bac8}} 
+\index{player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}!is\_human@{is\_human}}
+\index{is\_human@{is\_human}!player\_mod.player.AIPlayer@{player\_mod.player.AIPlayer}}
+\doxysubsubsection{\texorpdfstring{is\_human()}{is\_human()}}
+{\footnotesize\ttfamily  bool player\+\_\+mod.\+player.\+A\+I\+Player.\+is\+\_\+human (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Indicates that AI player is not an human player.\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a5e5d733cbbadc79c067434029d9abffc}{player\+\_\+mod.\+player.\+Player}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/player\+\_\+mod/player.\+py\end{DoxyCompactItemize}

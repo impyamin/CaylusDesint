@@ -1,0 +1,312 @@
+\hypertarget{classplayer__mod_1_1player_1_1Player}{}\doxysection{player\+\_\+mod.\+player.\+Player Class Reference}
+\label{classplayer__mod_1_1player_1_1Player}\index{player\_mod.player.Player@{player\_mod.player.Player}}
+Inheritance diagram for player\+\_\+mod.\+player.\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.362869cm]{classplayer__mod_1_1player_1_1Player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a060b38f394bd24553e483ee5eff49ca4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classplayer__mod_1_1player_1_1ColorPlayer}{Color\+Player}} color\+\_\+player)
+\item 
+str \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ad2338af12ea4890a9f96de225193f890}{name}} (self)
+\item 
+bool \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a5e5d733cbbadc79c067434029d9abffc}{is\+\_\+human}} (self)
+\item 
+None \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_acaf5308def0c3e51771aba03067dd7ee}{setup}} (self)
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_ad93dbaa1c2139344363e26fcff0feba1}\label{classplayer__mod_1_1player_1_1Player_ad93dbaa1c2139344363e26fcff0feba1}} 
+def {\bfseries get\+\_\+residence\+\_\+building} (self)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a99354fd7a749ae43f7044db411dfaf86}{get\+\_\+player\+\_\+buildings\+\_\+by\+\_\+location}} (self, \mbox{\hyperlink{classgame__mod_1_1utils_1_1Location}{Location}} location\+\_\+expected=None)
+\item 
+None \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ac449d2a90492f8d99ddfd943fc38cd45}{move\+\_\+all\+\_\+buildings\+\_\+from\+\_\+to\+\_\+location}} (self, \mbox{\hyperlink{classgame__mod_1_1utils_1_1Location}{Location}} location\+\_\+source, \mbox{\hyperlink{classgame__mod_1_1utils_1_1Location}{Location}} location\+\_\+destination)
+\item 
+str \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a0a8c9269c6967d49f29955c529e178d8}{txt\+\_\+name\+\_\+money\+\_\+resources\+\_\+workers\+\_\+\+P\+Ps\+\_\+deck}} (self, bool with\+\_\+money, bool with\+\_\+resources, bool with\+\_\+workers, bool with\+\_\+prestige\+\_\+points, bool with\+\_\+n\+\_\+buildings\+\_\+by\+\_\+location)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a24960577c9c62362ff19da3726cfbdc7}{resource\+\_\+all\+\_\+payments}} (self, resource\+\_\+costs)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_abc3da99c2803e46c9239dcb70d342c7b}{resource\+\_\+payments}} (self, resource\+\_\+costs)
+\item 
+int \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ad15bd3cceec4aae70858175df325a126}{n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle}} (self, \mbox{\hyperlink{classphases__mod_1_1phases_1_1CastlePhase}{Castle\+Phase}} castle\+\_\+phase)
+\item 
+int \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a3f09f23a44108416199de54c4bbdb3cc}{consume\+\_\+n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle}} (self, int \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ad15bd3cceec4aae70858175df325a126}{n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle}}, \mbox{\hyperlink{classphases__mod_1_1phases_1_1CastlePhase}{Castle\+Phase}} castle\+\_\+phase)
+\item 
+int \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a04e884df0aba027a1b2a0c12149875cd}{tot\+\_\+n\+\_\+prestige\+\_\+pts}} (self, buildings\+\_\+road)
+\item 
+bool \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a2c3d5de8d2527a8ad05a49b3e2d4a472}{choose\+\_\+discard\+\_\+hand\+\_\+for\+\_\+new}} (self)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ac12a3bb6c0f20f43400c0f8223f9a881}{choose\+\_\+action}} (self, possible\+\_\+actions)
+\item 
+int \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a19d3e4b878f890dc0a665e27df73532b}{choose\+\_\+n\+\_\+provost\+\_\+movement}} (self, int n\+\_\+min\+\_\+provost\+\_\+movements\+\_\+player, int n\+\_\+max\+\_\+provost\+\_\+movements\+\_\+player)
+\item 
+\mbox{\hyperlink{classmoneyres__mod_1_1moneyres_1_1Resource}{Resource}} \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a00f9072e492812f1c344382b017f7ffe}{choose\+\_\+buy\+\_\+resource}} (self, Money\+Resource money\+\_\+resource\+\_\+cost, int qty\+\_\+cost, resource\+\_\+gain\+\_\+choices, int qty\+\_\+gain)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ad6541e795e535960f42ce01508e33e70}{choose\+\_\+buy\+\_\+resource\+\_\+multi}} (self, costs, resource\+\_\+gain\+\_\+choices, int qty\+\_\+gain)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ab2619d0db2c67ccaa2753eaaa917f0e2}{choose\+\_\+buy\+\_\+castle\+\_\+multi}} (self, costs, castle\+\_\+gain\+\_\+choices)
+\item 
+\mbox{\hyperlink{classmoneyres__mod_1_1moneyres_1_1Resource}{Resource}} \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a429ac17cedd7d49b5b7b97b5f4aa418c}{choose\+\_\+exchange\+\_\+resource}} (self, bool can\+\_\+no\+\_\+use\+\_\+effect, int qty\+\_\+cost, resource\+\_\+cost\+\_\+choices, Money\+Resource money\+\_\+resource\+\_\+gain, int qty\+\_\+gain)
+\item 
+def \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a7438a51d7f929f6f88380b7abc3cc33d}{choose\+\_\+construct\+\_\+residence}} (self, resource\+\_\+costs, i\+\_\+road\+\_\+buildings\+\_\+on\+\_\+road)
+\item 
+int \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_a2b73f797b471466666dc16be659f9e5a}{choose\+\_\+n\+\_\+batches\+\_\+to\+\_\+castle}} (self, int \mbox{\hyperlink{classplayer__mod_1_1player_1_1Player_ad15bd3cceec4aae70858175df325a126}{n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_abca7b4bdb80217bb1ff45d1e007e4b59}\label{classplayer__mod_1_1player_1_1Player_abca7b4bdb80217bb1ff45d1e007e4b59}} 
+{\bfseries color\+\_\+player}
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a172e1235661af483683b36f96b4a2773}\label{classplayer__mod_1_1player_1_1Player_a172e1235661af483683b36f96b4a2773}} 
+{\bfseries current\+\_\+n\+\_\+workers}
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a17458923d5a006492d26b79511fbedd1}\label{classplayer__mod_1_1player_1_1Player_a17458923d5a006492d26b79511fbedd1}} 
+{\bfseries current\+\_\+money\+\_\+resources}
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_aea06642f700263fe4315a939fa22b365}\label{classplayer__mod_1_1player_1_1Player_aea06642f700263fe4315a939fa22b365}} 
+{\bfseries current\+\_\+n\+\_\+prestige\+\_\+pts}
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a85f2dab2e914d7e7124fa4c01756e96b}\label{classplayer__mod_1_1player_1_1Player_a85f2dab2e914d7e7124fa4c01756e96b}} 
+{\bfseries deck}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_af623e580be4e508cb3ad42abf679c1e1}\label{classplayer__mod_1_1player_1_1Player_af623e580be4e508cb3ad42abf679c1e1}} 
+string {\bfseries txt\+\_\+separator\+\_\+name} = \textquotesingle{}=\textquotesingle{}
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a68dce71964f5c5278f35ec04a7dfd12e}\label{classplayer__mod_1_1player_1_1Player_a68dce71964f5c5278f35ec04a7dfd12e}} 
+{\bfseries n\+\_\+workers} = None
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a2d91faced910b4b00c1c495f08755349}\label{classplayer__mod_1_1player_1_1Player_a2d91faced910b4b00c1c495f08755349}} 
+{\bfseries money\+\_\+resources} = None
+\item 
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_addbf50b22f46bd78ed512aca8c6cb2a9}\label{classplayer__mod_1_1player_1_1Player_addbf50b22f46bd78ed512aca8c6cb2a9}} 
+{\bfseries n\+\_\+prestige\+\_\+pts} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Player.\end{DoxyVerb}
+\begin{DoxyVerb}Each player chooses a color and takes the corresponding cards and pawns.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a060b38f394bd24553e483ee5eff49ca4}\label{classplayer__mod_1_1player_1_1Player_a060b38f394bd24553e483ee5eff49ca4}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+Player.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classplayer__mod_1_1player_1_1ColorPlayer}{Color\+Player}}}]{color\+\_\+player }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialization of a player.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AdvancedAIPlayer_a13b9dd0b1b55ebcce1dec947daeab83d}{player\+\_\+mod.\+player.\+Advanced\+A\+I\+Player}}, \mbox{\hyperlink{classplayer__mod_1_1player_1_1BasicAIPlayer_ac6681d045707a349d38a222b1fefc404}{player\+\_\+mod.\+player.\+Basic\+A\+I\+Player}}, \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_ad68d71ac2726fbba51b66c695c7634d2}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_ae3055f0604d2b380dc9f2cf6a8f9ef59}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_ac12a3bb6c0f20f43400c0f8223f9a881}\label{classplayer__mod_1_1player_1_1Player_ac12a3bb6c0f20f43400c0f8223f9a881}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_action@{choose\_action}}
+\index{choose\_action@{choose\_action}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_action()}{choose\_action()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+Player.\+choose\+\_\+action (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{possible\+\_\+actions }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Choose one of the possible actions.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_aee2f64269a1f7ca0e271cb53271f2b52}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_abfe2b72a19bb38b72df602544c9d1a20}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_ab2619d0db2c67ccaa2753eaaa917f0e2}\label{classplayer__mod_1_1player_1_1Player_ab2619d0db2c67ccaa2753eaaa917f0e2}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_buy\_castle\_multi@{choose\_buy\_castle\_multi}}
+\index{choose\_buy\_castle\_multi@{choose\_buy\_castle\_multi}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_buy\_castle\_multi()}{choose\_buy\_castle\_multi()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+Player.\+choose\+\_\+buy\+\_\+castle\+\_\+multi (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{costs,  }\item[{}]{castle\+\_\+gain\+\_\+choices }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A player can choose to apply several (one or more) times to buy some tokens of the castle with money (e.g. effects of church player buldings).\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_a697f48d0c9fcdd1c734187a46b344dcd}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_a9e2286de51c4a254cce3c21e463fc5ce}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a00f9072e492812f1c344382b017f7ffe}\label{classplayer__mod_1_1player_1_1Player_a00f9072e492812f1c344382b017f7ffe}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_buy\_resource@{choose\_buy\_resource}}
+\index{choose\_buy\_resource@{choose\_buy\_resource}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_buy\_resource()}{choose\_buy\_resource()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classmoneyres__mod_1_1moneyres_1_1Resource}{Resource}} player\+\_\+mod.\+player.\+Player.\+choose\+\_\+buy\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{Money\+Resource}]{money\+\_\+resource\+\_\+cost,  }\item[{int}]{qty\+\_\+cost,  }\item[{}]{resource\+\_\+gain\+\_\+choices,  }\item[{int}]{qty\+\_\+gain }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A player can choose to buy some resource with money (e.g. peddler neutral building, secondary effects of peddler and bank player buldings).\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_ac859a55a9ec0577c575a55c16b40b5e9}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_ac00011ee2f8a71d439a8dccd33a92dc2}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_ad6541e795e535960f42ce01508e33e70}\label{classplayer__mod_1_1player_1_1Player_ad6541e795e535960f42ce01508e33e70}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_buy\_resource\_multi@{choose\_buy\_resource\_multi}}
+\index{choose\_buy\_resource\_multi@{choose\_buy\_resource\_multi}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_buy\_resource\_multi()}{choose\_buy\_resource\_multi()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+Player.\+choose\+\_\+buy\+\_\+resource\+\_\+multi (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{costs,  }\item[{}]{resource\+\_\+gain\+\_\+choices,  }\item[{int}]{qty\+\_\+gain }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A player can choose to apply 0, 1 or 2 times to buy some resource with money (e.g. primary effects of peddler and bank player buldings).\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_aa8c301ae73fab8e06ff2b312bdfb7eb1}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_af390b0ff8b705d5a2c5853cb0892a1a3}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a7438a51d7f929f6f88380b7abc3cc33d}\label{classplayer__mod_1_1player_1_1Player_a7438a51d7f929f6f88380b7abc3cc33d}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_construct\_residence@{choose\_construct\_residence}}
+\index{choose\_construct\_residence@{choose\_construct\_residence}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_construct\_residence()}{choose\_construct\_residence()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+Player.\+choose\+\_\+construct\+\_\+residence (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{resource\+\_\+costs,  }\item[{}]{i\+\_\+road\+\_\+buildings\+\_\+on\+\_\+road }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player can construct a residential building by turning over one of his/her cards along the road.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_abd9083ace54c9e842a26b830cbfeaec4}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_a8fbc82ca81a2804de873c650ff7f7ab5}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a2c3d5de8d2527a8ad05a49b3e2d4a472}\label{classplayer__mod_1_1player_1_1Player_a2c3d5de8d2527a8ad05a49b3e2d4a472}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_discard\_hand\_for\_new@{choose\_discard\_hand\_for\_new}}
+\index{choose\_discard\_hand\_for\_new@{choose\_discard\_hand\_for\_new}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_discard\_hand\_for\_new()}{choose\_discard\_hand\_for\_new()}}
+{\footnotesize\ttfamily  bool player\+\_\+mod.\+player.\+Player.\+choose\+\_\+discard\+\_\+hand\+\_\+for\+\_\+new (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player can discard all the cards in his/her hand and take new cards.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_adc83f16f280225a062d7a4bbf825410f}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_a5b3dcd5767144b3c407f039c5922ce32}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a429ac17cedd7d49b5b7b97b5f4aa418c}\label{classplayer__mod_1_1player_1_1Player_a429ac17cedd7d49b5b7b97b5f4aa418c}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_exchange\_resource@{choose\_exchange\_resource}}
+\index{choose\_exchange\_resource@{choose\_exchange\_resource}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_exchange\_resource()}{choose\_exchange\_resource()}}
+{\footnotesize\ttfamily  \mbox{\hyperlink{classmoneyres__mod_1_1moneyres_1_1Resource}{Resource}} player\+\_\+mod.\+player.\+Player.\+choose\+\_\+exchange\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{can\+\_\+no\+\_\+use\+\_\+effect,  }\item[{int}]{qty\+\_\+cost,  }\item[{}]{resource\+\_\+cost\+\_\+choices,  }\item[{Money\+Resource}]{money\+\_\+resource\+\_\+gain,  }\item[{int}]{qty\+\_\+gain }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A player can choose to exchange some resource with some money or other resource, and may not use the effect (e.g. primary effect of market player building, secondary effect of gold mine player building).\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_ab6c6ebd91b1736a181d0893c2ff1eb89}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_abf4288ad2b58948c84bead00806d0002}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a2b73f797b471466666dc16be659f9e5a}\label{classplayer__mod_1_1player_1_1Player_a2b73f797b471466666dc16be659f9e5a}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_n\_batches\_to\_castle@{choose\_n\_batches\_to\_castle}}
+\index{choose\_n\_batches\_to\_castle@{choose\_n\_batches\_to\_castle}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_n\_batches\_to\_castle()}{choose\_n\_batches\_to\_castle()}}
+{\footnotesize\ttfamily  int player\+\_\+mod.\+player.\+Player.\+choose\+\_\+n\+\_\+batches\+\_\+to\+\_\+castle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player may offer batches to the castle.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_a2f4b70a3f819d804bc5ff41dfdbebc18}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_a1ce96fbb311912b365ead20ec1a5449a}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a19d3e4b878f890dc0a665e27df73532b}\label{classplayer__mod_1_1player_1_1Player_a19d3e4b878f890dc0a665e27df73532b}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!choose\_n\_provost\_movement@{choose\_n\_provost\_movement}}
+\index{choose\_n\_provost\_movement@{choose\_n\_provost\_movement}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{choose\_n\_provost\_movement()}{choose\_n\_provost\_movement()}}
+{\footnotesize\ttfamily  int player\+\_\+mod.\+player.\+Player.\+choose\+\_\+n\+\_\+provost\+\_\+movement (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n\+\_\+min\+\_\+provost\+\_\+movements\+\_\+player,  }\item[{int}]{n\+\_\+max\+\_\+provost\+\_\+movements\+\_\+player }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Each player can move the Provost along the road by paying deniers.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_a11dd7ce3d7c43fbf92036c835a492c63}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_a6e95736d1eb8c2596b7ef8c740a6d1d9}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a3f09f23a44108416199de54c4bbdb3cc}\label{classplayer__mod_1_1player_1_1Player_a3f09f23a44108416199de54c4bbdb3cc}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!consume\_n\_max\_batches\_to\_castle@{consume\_n\_max\_batches\_to\_castle}}
+\index{consume\_n\_max\_batches\_to\_castle@{consume\_n\_max\_batches\_to\_castle}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{consume\_n\_max\_batches\_to\_castle()}{consume\_n\_max\_batches\_to\_castle()}}
+{\footnotesize\ttfamily  int player\+\_\+mod.\+player.\+Player.\+consume\+\_\+n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{int}]{n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle,  }\item[{\mbox{\hyperlink{classphases__mod_1_1phases_1_1CastlePhase}{Castle\+Phase}}}]{castle\+\_\+phase }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Consume some number of batches to offer to the castle.\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a99354fd7a749ae43f7044db411dfaf86}\label{classplayer__mod_1_1player_1_1Player_a99354fd7a749ae43f7044db411dfaf86}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!get\_player\_buildings\_by\_location@{get\_player\_buildings\_by\_location}}
+\index{get\_player\_buildings\_by\_location@{get\_player\_buildings\_by\_location}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{get\_player\_buildings\_by\_location()}{get\_player\_buildings\_by\_location()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+Player.\+get\+\_\+player\+\_\+buildings\+\_\+by\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame__mod_1_1utils_1_1Location}{Location}} }]{location\+\_\+expected = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the player buildings of his/her deck in an expected location.\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a5e5d733cbbadc79c067434029d9abffc}\label{classplayer__mod_1_1player_1_1Player_a5e5d733cbbadc79c067434029d9abffc}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!is\_human@{is\_human}}
+\index{is\_human@{is\_human}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{is\_human()}{is\_human()}}
+{\footnotesize\ttfamily  bool player\+\_\+mod.\+player.\+Player.\+is\+\_\+human (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Indicates whether the player is a human or an artificial intelligence.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AIPlayer_afebc18d77a522411781c8b41fcb3bac8}{player\+\_\+mod.\+player.\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_a8bd3e81ae8d8e1917e870bc1ead74782}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_ac449d2a90492f8d99ddfd943fc38cd45}\label{classplayer__mod_1_1player_1_1Player_ac449d2a90492f8d99ddfd943fc38cd45}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!move\_all\_buildings\_from\_to\_location@{move\_all\_buildings\_from\_to\_location}}
+\index{move\_all\_buildings\_from\_to\_location@{move\_all\_buildings\_from\_to\_location}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{move\_all\_buildings\_from\_to\_location()}{move\_all\_buildings\_from\_to\_location()}}
+{\footnotesize\ttfamily  None player\+\_\+mod.\+player.\+Player.\+move\+\_\+all\+\_\+buildings\+\_\+from\+\_\+to\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classgame__mod_1_1utils_1_1Location}{Location}}}]{location\+\_\+source,  }\item[{\mbox{\hyperlink{classgame__mod_1_1utils_1_1Location}{Location}}}]{location\+\_\+destination }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move all buildings from a source location (e.g. pile, hand, discard) to a destination location (e.g. pile, hand, discard).\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_ad15bd3cceec4aae70858175df325a126}\label{classplayer__mod_1_1player_1_1Player_ad15bd3cceec4aae70858175df325a126}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!n\_max\_batches\_to\_castle@{n\_max\_batches\_to\_castle}}
+\index{n\_max\_batches\_to\_castle@{n\_max\_batches\_to\_castle}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{n\_max\_batches\_to\_castle()}{n\_max\_batches\_to\_castle()}}
+{\footnotesize\ttfamily  int player\+\_\+mod.\+player.\+Player.\+n\+\_\+max\+\_\+batches\+\_\+to\+\_\+castle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{\mbox{\hyperlink{classphases__mod_1_1phases_1_1CastlePhase}{Castle\+Phase}}}]{castle\+\_\+phase }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the maximum number of batches to offer to the castle.\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_ad2338af12ea4890a9f96de225193f890}\label{classplayer__mod_1_1player_1_1Player_ad2338af12ea4890a9f96de225193f890}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!name@{name}}
+\index{name@{name}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily  str player\+\_\+mod.\+player.\+Player.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the default name of the player.\end{DoxyVerb}
+ 
+
+Reimplemented in \mbox{\hyperlink{classplayer__mod_1_1player_1_1AdvancedAIPlayer_ac68c27bc1dfb430ec2676b279ea2fb3d}{player\+\_\+mod.\+player.\+Advanced\+A\+I\+Player}}, \mbox{\hyperlink{classplayer__mod_1_1player_1_1BasicAIPlayer_a0e776325073cf4827bcc1e663861a101}{player\+\_\+mod.\+player.\+Basic\+A\+I\+Player}}, and \mbox{\hyperlink{classplayer__mod_1_1player_1_1HumanPlayer_a82aacdff34f83d8210b66c55fafa31ba}{player\+\_\+mod.\+player.\+Human\+Player}}.
+
+\mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a24960577c9c62362ff19da3726cfbdc7}\label{classplayer__mod_1_1player_1_1Player_a24960577c9c62362ff19da3726cfbdc7}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!resource\_all\_payments@{resource\_all\_payments}}
+\index{resource\_all\_payments@{resource\_all\_payments}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{resource\_all\_payments()}{resource\_all\_payments()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+Player.\+resource\+\_\+all\+\_\+payments (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{resource\+\_\+costs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get all possible payments of resources according to the cost of resources (including any cube resources).
+Remark: wild resource is used for missing resources if and only if it is necessary.\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_abc3da99c2803e46c9239dcb70d342c7b}\label{classplayer__mod_1_1player_1_1Player_abc3da99c2803e46c9239dcb70d342c7b}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!resource\_payments@{resource\_payments}}
+\index{resource\_payments@{resource\_payments}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{resource\_payments()}{resource\_payments()}}
+{\footnotesize\ttfamily def player\+\_\+mod.\+player.\+Player.\+resource\+\_\+payments (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{resource\+\_\+costs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get one payment of resources for the cost of resources without the case of any cube resources.
+Remark: wild resource is used for missing resources if and only if it is necessary.\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_acaf5308def0c3e51771aba03067dd7ee}\label{classplayer__mod_1_1player_1_1Player_acaf5308def0c3e51771aba03067dd7ee}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!setup@{setup}}
+\index{setup@{setup}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily  None player\+\_\+mod.\+player.\+Player.\+setup (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Setup the player.\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a04e884df0aba027a1b2a0c12149875cd}\label{classplayer__mod_1_1player_1_1Player_a04e884df0aba027a1b2a0c12149875cd}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!tot\_n\_prestige\_pts@{tot\_n\_prestige\_pts}}
+\index{tot\_n\_prestige\_pts@{tot\_n\_prestige\_pts}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{tot\_n\_prestige\_pts()}{tot\_n\_prestige\_pts()}}
+{\footnotesize\ttfamily  int player\+\_\+mod.\+player.\+Player.\+tot\+\_\+n\+\_\+prestige\+\_\+pts (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{buildings\+\_\+road }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the total number of prestige points of the player.\end{DoxyVerb}
+\begin{DoxyVerb}Each player adds up their prestige points as follows:
+● each token in their possession is worth its value in prestige points (4, 3 or 2 PPs)
+● [Beginner version] the buildings the player has built along the road yield prestige points, as shown in the top right-hand corner of the card (buildings which remain in the player’s hand yield no points).
+● [Beginner version] the prestige buildings the player has built yield prestige points as shown in the top right-hand corner of the card.
+● [Standard version] the buildings the player has built along the road yield points according to their visible value only: thus, if a building has been transformed into a residential building, it only yields 1 point. A residential building yields no point if a prestige building has been built on top of it; the prestige building yields its points normally.
+● each gold cube yields 1 PP
+● each group of any 3 cubes (except gold) yields 1 PP
+● each group of 3 deniers yields 1 PP
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classplayer__mod_1_1player_1_1Player_a0a8c9269c6967d49f29955c529e178d8}\label{classplayer__mod_1_1player_1_1Player_a0a8c9269c6967d49f29955c529e178d8}} 
+\index{player\_mod.player.Player@{player\_mod.player.Player}!txt\_name\_money\_resources\_workers\_PPs\_deck@{txt\_name\_money\_resources\_workers\_PPs\_deck}}
+\index{txt\_name\_money\_resources\_workers\_PPs\_deck@{txt\_name\_money\_resources\_workers\_PPs\_deck}!player\_mod.player.Player@{player\_mod.player.Player}}
+\doxysubsubsection{\texorpdfstring{txt\_name\_money\_resources\_workers\_PPs\_deck()}{txt\_name\_money\_resources\_workers\_PPs\_deck()}}
+{\footnotesize\ttfamily  str player\+\_\+mod.\+player.\+Player.\+txt\+\_\+name\+\_\+money\+\_\+resources\+\_\+workers\+\_\+\+P\+Ps\+\_\+deck (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{bool}]{with\+\_\+money,  }\item[{bool}]{with\+\_\+resources,  }\item[{bool}]{with\+\_\+workers,  }\item[{bool}]{with\+\_\+prestige\+\_\+points,  }\item[{bool}]{with\+\_\+n\+\_\+buildings\+\_\+by\+\_\+location }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the text of the player name with the money and resources (always in the same order, wild last), workers, prestige points and number of buildings by location.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/player\+\_\+mod/player.\+py\end{DoxyCompactItemize}
