@@ -8,7 +8,7 @@ from phases_mod import *
 from player_mod import *
 
 from moneyres_mod import *
-from game_mod import *
+from game_mod import *  
 
 from game_mod.utils import indent
 from game_mod.utils import TXT_SEPARATOR
