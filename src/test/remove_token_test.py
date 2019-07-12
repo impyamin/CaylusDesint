@@ -30,7 +30,6 @@ class TestRemove_token(unittest.TestCase):
         self.assertEqual(game.remove_tokens_castle(0),0)
         
 
-class TestRemove_token(unittest.TestCase):
     def test_remove_all_points(self):
         castle = []
         for i in range(0,10):
@@ -43,7 +42,6 @@ class TestRemove_token(unittest.TestCase):
         self.assertEqual(game.remove_tokens_castle(600),600)
 
 
-class TestRemove_token(unittest.TestCase):
     def test_excede_points_capacity(self):
         castle = []
         for i in range(0,10):
@@ -55,7 +53,6 @@ class TestRemove_token(unittest.TestCase):
         
         self.assertEqual(game.remove_tokens_castle(1000),600)
 
-class TestRemove_token(unittest.TestCase):
     def test_remove_negative(self):
         castle = []
         for i in range(0,10):
@@ -67,9 +64,7 @@ class TestRemove_token(unittest.TestCase):
         
         self.assertEqual(game.remove_tokens_castle(-150),0)
 
-
         
-            
        
 
 if __name__ == '__main__':
