@@ -8,8 +8,8 @@ from phases_mod import *
 from moneyres_mod import *
 from game_mod import *
 
-import player_mod
-from player_mod import *
+# import player_mod
+# from player_mod import *
 
 from game_mod.utils import indent
 from game_mod.utils import Location

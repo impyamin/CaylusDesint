@@ -159,12 +159,12 @@ class Game:
 
     ## Documentation for a function.
     #
-#  More details.
+    #  More details.
     def ask_for_replay(self):
         response = input("Game has ended, wanna play again ? [Y/N]")
         if response == 'Y':
             response = input("Please select difficulty : begginer / standard")
-            self.version = response
+            self.version.name = response
             response = input("Select players order")
             p_list = []
             for p in response.split(' ') : 

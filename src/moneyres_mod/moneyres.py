@@ -91,10 +91,10 @@ class Resource(MoneyResource):
         """
         Remark: this method exists only because such information lacks in the XML file. 
         """
-        return self.name.lower() == 'gold'
+        return self.name.lower() == 'gold'    
 
     @staticmethod
-    def get_wild_resource():  # -> Resource:
-        """Get the (unique) wild resource."""
-        return [resource for resource in Resource.resources.values() if resource.is_wild()][0]
+    def get_wild_resource():
+        return list(filter(lambda res : res.is_wild(), Resource.resources.values()))[0]
+        
 

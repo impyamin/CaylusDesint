@@ -1,3 +1,4 @@
 from test.Ordinal_number_test import TestOrdinal_number
 from test.Money_singleton_test import TestMoney_singleton
 from test.resource_all_payments_test import TestResource_all_payments
+from test.remove_token_test import TestRemove_token
